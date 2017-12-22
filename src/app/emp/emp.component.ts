@@ -9,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpComponent implements OnInit {
 
+  empId: number = 100;
+  empName: string = 'Raja';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getEmpId(){
+    return this.empId;
+  }
+
+  getEmpName(){
+    return this.empName;
   }
 
 }
