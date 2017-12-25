@@ -1,6 +1,7 @@
 <p>
   {{'Emp'}} The Employee Name is {{getEmpName()}} , and his Id is {{empId}}
 </p>
-<div><button class="btn btn-primary" [disabled]="!allowNewServer">Add</button></div>
+<div><button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add</button></div>
 <p [innerText]="allowNewServer"></p>
 <p>displaying the value of allowNewServer: {{allowNewServer}}</p>
+<p>{{serverCreationStatus}}</p>

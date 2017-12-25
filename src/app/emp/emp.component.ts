@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class EmpComponent implements OnInit {
 
   allowNewServer = false;
+  serverCreationStatus = 'No server was created!';
   
   empId: number = 100;
   empName: string = 'Raja';
@@ -28,6 +29,10 @@ export class EmpComponent implements OnInit {
 
   getEmpName(){
     return this.empName;
+  }
+
+  onCreateServer(){
+    this.serverCreationStatus = 'Server was created!';
   }
 
 }
