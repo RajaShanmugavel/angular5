@@ -9,11 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpComponent implements OnInit {
 
+  allowNewServer = false;
+  
   empId: number = 100;
   empName: string = 'Raja';
 
-  constructor() { }
-
+  constructor() { 
+     setTimeout(()=>{
+      this.allowNewServer= true;
+     },2000);
+    }
   ngOnInit() {
   }
 
