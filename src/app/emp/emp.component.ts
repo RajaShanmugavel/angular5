@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Event } from '_debugger';
 
 @Component({
   // selector: '[app-emp]',
@@ -11,6 +12,7 @@ export class EmpComponent implements OnInit {
 
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
+  serverName = '';
   
   empId: number = 100;
   empName: string = 'Raja';
@@ -35,8 +37,9 @@ export class EmpComponent implements OnInit {
     this.serverCreationStatus = 'Server was created!';
   }
 
-  onUpdateServerName(event:any){
-    console.log(event);
+  onUpdateServerName(event:Event){
+    //console.log(event);
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
 }
