@@ -35,4 +35,8 @@ export class EmpComponent implements OnInit {
     this.serverCreationStatus = 'Server was created!';
   }
 
+  onUpdateServerName(event:any){
+    console.log(event);
+  }
+
 }
