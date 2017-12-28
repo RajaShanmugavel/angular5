@@ -5,15 +5,15 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 import { AppComponent } from './app.component';
-import { EmpComponent } from './emp/emp.component';
-import { StudComponent } from './stud/stud.component';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './server/servers/servers.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmpComponent,
-    StudComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,FormsModule
