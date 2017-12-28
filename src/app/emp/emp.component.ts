@@ -14,15 +14,18 @@ export class EmpComponent implements OnInit {
   serverCreationStatus = 'No server was created!';
   serverName = '';
   serverCreated = false;
+  serverStatus: string = 'offline';
     
   empId: number = 100;
   empName: string = 'Raja';
 
   constructor() { 
+    this.serverStatus = Math.random() > 0.5 ? 'online':'offline';
      setTimeout(()=>{
       this.allowNewServer= true;
      },2000);
     }
+
   ngOnInit() {
   }
 
