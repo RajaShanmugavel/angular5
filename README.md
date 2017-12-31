@@ -1,0 +1,1 @@
+Placing all the trials I am experimenting with Angular5
