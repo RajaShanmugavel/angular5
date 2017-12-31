@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+// Use Augury Chrome extension to get more information about components and injections...
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
