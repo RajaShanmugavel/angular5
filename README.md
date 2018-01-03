@@ -1,6 +1,7 @@
 Placing all the trials I am experimenting with Angular5
 
 Lifecyle of Angular Component:
+-----------------------------
 
 ngOnChanges	-	Called after a bound input property changes
 
