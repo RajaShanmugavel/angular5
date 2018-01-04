@@ -12,9 +12,12 @@ export class CockpitComponent implements OnInit {
   // newServerContent = '';
   @ViewChild('serverContentInput') serverContentInput: ElementRef;
 
-  constructor() { }
+  constructor() {
+    console.log("Constructor of CockpitComponent called!")
+   }
 
   ngOnInit() {
+    console.log("ngOnInit of CockpitComponent called!")
   }
     
   onAddServer(nameInput: HTMLInputElement) {
