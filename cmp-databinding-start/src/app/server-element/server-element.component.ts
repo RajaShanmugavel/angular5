@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation, SimpleChanges, OnChanges, DoCheck } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation, SimpleChanges, OnChanges, DoCheck, AfterContentInit } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ViewEncapsulation, SimpleChanges, OnChanges, 
   styleUrls: ['./server-element.component.css'],
   encapsulation: ViewEncapsulation.Emulated // 'None' - Overrides style, also 'Native' (this does the shadow DOM). Default is 'Emulated'
 })
-export class ServerElementComponent implements OnInit, OnChanges, DoCheck {
+export class ServerElementComponent implements OnInit, OnChanges, DoCheck, AfterContentInit {
 
   @Input('srvElement') element: { type: string, name: string, content: string }; // The argument 'srvElement' inside @Input is the alias. If not used, will be accessed using 'element'
   @Input() name: string;
@@ -22,6 +22,10 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck {
 
   ngDoCheck(){
     console.log("ngDoCheck of ServerElementComponent called!");
+  }
+
+  ngAfterContentInit(){
+    console.log("ngAfterContentInit of ServerElementComponent called!");
   }
 
 
