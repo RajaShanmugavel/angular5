@@ -23,8 +23,8 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
 
   ngOnInit() {
     console.log("ngOnInit of ServerElementComponent called!");
-    console.log('Text Content:'+this.header.nativeElement.textContent); 
-    console.log('Text Content of Paragraph:'+this.paragraph.nativeElement.textContent);
+    console.log('Text Content:' + this.header.nativeElement.textContent);
+    console.log('Text Content of Paragraph:' + this.paragraph.nativeElement.textContent);
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -38,7 +38,7 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
 
   ngAfterContentInit() {
     console.log("ngAfterContentInit of ServerElementComponent called!");
-    console.log('Text Content of Paragraph:'+this.paragraph.nativeElement.textContent);
+    console.log('Text Content of Paragraph:' + this.paragraph.nativeElement.textContent);
   }
 
   ngAfterContentChecked() {
@@ -47,7 +47,7 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
 
   ngAfterViewInit() {
     console.log("ngAfterViewInit of ServerElementComponent called!");
-    console.log('Text Content:'+this.header.nativeElement.textContent); 
+    console.log('Text Content:' + this.header.nativeElement.textContent);
   }
 
   ngAfterViewChecked() {

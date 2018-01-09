@@ -16,9 +16,9 @@ export class CockpitComponent implements OnInit, OnChanges {
     console.log("Constructor of CockpitComponent called!");
   }
 
-  ngOnChanges(changes : SimpleChanges){
+  ngOnChanges(changes: SimpleChanges) {
     console.log("ngOnChanges of CockpitComponent called!");
-    console.log("Changes:"+changes);
+    console.log("Changes:" + changes);
   }
 
 
