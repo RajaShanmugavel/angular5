@@ -8,10 +8,16 @@
       <ul class="list-group">
         <li
           class="list-group-item"
-          *ngFor="let number of numbers"
+          *ngFor="let odd of oddNumbers"
           >
           <!-- *ngIf="number % 2 == 0" Having two directives will not work --> 
-          {{number}}
+          {{odd}}
+        </li>
+        <li
+          class="list-group-item"
+          *ngFor="let even of evenNumbers"
+          >
+          {{even}}
         </li>
       </ul>
       <!-- <ng-template [ngIf]="onlyOdd">
