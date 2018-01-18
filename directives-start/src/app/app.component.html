@@ -9,6 +9,7 @@
         <div *ngIf="onlyOdd">
             <li
             class="list-group-item"
+            [ngClass]="{odd: odd % 2 !== 0}"
             *ngFor="let odd of oddNumbers"
             >
             <!-- *ngIf="number % 2 == 0" Having two directives will not work --> 
@@ -18,6 +19,7 @@
         <div *ngIf="!onlyOdd">
             <li
             class="list-group-item"
+            [ngClass]="{odd: even % 2 !== 0}"
             *ngFor="let even of evenNumbers"
             >
             {{even}}
