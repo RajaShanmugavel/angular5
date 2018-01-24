@@ -4,7 +4,7 @@ import { Directive, Renderer2, OnInit, ElementRef, HostListener, HostBinding } f
   selector: '[appBetterHighlight]'
 })
 export class BetterHighlightDirective implements OnInit {
-  
+  // HostBinding can be used in place for renderer...  
   @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) { }
