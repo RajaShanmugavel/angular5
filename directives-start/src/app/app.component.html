@@ -18,6 +18,7 @@
             {{even}}
           </li>
         </div>
+        <!-- The same even numbers is redone below using ng-template -->
         <ng-template [ngIf]="!onlyOdd">
           <div>
             <li class="list-group-item" [ngClass]="{odd: even % 2 !== 0}" [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow':'transparent'}"
