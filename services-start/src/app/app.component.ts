@@ -10,7 +10,7 @@ import { AccountsService } from 'app/accounts.service';
 export class AppComponent implements OnInit {
   accounts: {name:string, status:string}[] = [];
 
-  constructor(private accountService:AccountsService){
+  constructor(private accountService:AccountsService){ // To inject a Service -> declare import, add to provider(only in appcomp), declare in constructor
   }
 
   ngOnInit(){
