@@ -20,7 +20,7 @@ export class AccountsService{
         }
       ];
 
-      constructor(private loggingService: LoggingService){
+      constructor(private loggingService: LoggingService){ // Injecting a Service into another Service.
       }
 
       addAccount(name:string, status:string){
