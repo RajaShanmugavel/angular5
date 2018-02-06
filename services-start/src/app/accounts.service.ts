@@ -1,6 +1,5 @@
 import { LoggingService } from "app/logging.service";
-import { Injectable } from "@angular/core";
-import { stagger } from "@angular/core/src/animation/dsl";
+import { Injectable, EventEmitter } from "@angular/core";
 
 @Injectable()
 export class AccountsService{
@@ -19,6 +18,8 @@ export class AccountsService{
           status: 'unknown'
         }
       ];
+
+      statusUpdated = new EventEmitter<string>();
 
       constructor(private loggingService: LoggingService){ // Injecting a Service into another Service.
       }
