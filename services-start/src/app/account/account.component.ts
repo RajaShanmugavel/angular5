@@ -12,7 +12,7 @@ export class AccountComponent {
   @Input() account: { name: string, status: string };
   @Input() id: number;
 
-  constructor(private loggingService: LoggingService, private accountsService: AccountsService) {
+  constructor(private loggingService: LoggingService, private accountsService: AccountsService) { // Injecting the LoggingService and AccountsService...
 
   }
 
