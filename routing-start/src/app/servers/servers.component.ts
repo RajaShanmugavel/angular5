@@ -16,6 +16,7 @@ export class ServersComponent implements OnInit {
     this.servers = this.serversService.getServers();
   }
 
+  // The below will be fixed in the next lesson....
   onReload() {
     // this.router.navigate(['servers'], {relativeTo: this.route});
   }
