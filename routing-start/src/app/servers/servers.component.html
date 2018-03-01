@@ -1,10 +1,7 @@
 <div class="row">
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
-      <a
-        href="#"
-        class="list-group-item"
-        *ngFor="let server of servers">
+      <a href="#" class="list-group-item" *ngFor="let server of servers">
         {{ server.name }}
       </a>
     </div>
@@ -12,10 +9,9 @@
   <div class="col-xs-12 col-sm-4">
     <!-- <a routerLink="/servers">Reload page</a>    -->
     <!-- when used with ../servers it goes one level up. with just servers it does /servers/servers -->
-    <button class="btn btn-primary" (click)="onReload()">Reload Page</button> 
+    <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
     <app-edit-server></app-edit-server>
     <hr>
     <app-server></app-server>
   </div>
 </div>
-
