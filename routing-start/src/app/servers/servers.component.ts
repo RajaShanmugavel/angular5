@@ -12,7 +12,7 @@ export class ServersComponent implements OnInit {
 
   constructor(private serversService: ServersService, private router: Router, private route: ActivatedRoute) { }
 
-  ngOnInit()  {
+  ngOnInit() {
     this.servers = this.serversService.getServers();
   }
 
