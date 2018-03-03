@@ -12,10 +12,18 @@ export class UserComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    // This method runs first for the provided id and name parameters
     this.user = {
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name'],
     };
+
+    // The below uses Subscribe <Observable> meaning the below code runs only when the values of parameters id & name changes..
+    this.route.params
+      .subscribe(params => {
+        this.user.id = params['id'];
+        this.user.name = params['name'];
+      });
   }
 
 }
