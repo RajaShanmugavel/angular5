@@ -26,6 +26,7 @@ export class EditServerComponent implements OnInit {
     this.serverStatus = this.server.status;
   }
 
+  // calls to update server
   onUpdateServer() {
     this.serversService.updateServer(this.server.id, { name: this.serverName, status: this.serverStatus });
   }
