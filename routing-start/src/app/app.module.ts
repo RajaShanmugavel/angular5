@@ -15,13 +15,14 @@ import { ServersService } from './servers/servers.service';
 
 // If the application becomes complex, we can have routing modules for each big module
 
-// Test comment
+// TODO: Add appropriate comments
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'users', component: UsersComponent },
   { path: 'users/:id/:name', component: UserComponent },
   { path: 'servers', component: ServersComponent },
+  { path: 'servers/:id', component: ServerComponent },
   { path: 'servers/:id/edit', component: EditServerComponent }
 ];
 
