@@ -29,7 +29,7 @@ export class UserComponent implements OnInit {
   }
 
   // Not required to do this here.. But doesn't hurt..
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.paramsSubscription.unsubscribe();
   }
 
