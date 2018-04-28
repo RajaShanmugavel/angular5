@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginService } from './login.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
   ],
   exports: [
   ],
-  providers: [],  
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
