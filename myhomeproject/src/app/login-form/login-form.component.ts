@@ -11,7 +11,7 @@ import { Employee } from '../employee';
 export class LoginFormComponent implements OnInit {
 
   loginForm: FormGroup;
-  employees: Employee;
+  employees: Employee[] = [];
 
   constructor(
     private fb: FormBuilder,

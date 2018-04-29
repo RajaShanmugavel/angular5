@@ -12,8 +12,8 @@ export class LoginService {
 
   }
 
-  getEmployees(): Observable<Employee> {
-    return this.http.get<Employee>(this.url);
+  getEmployees(): Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.url);
   }
 
 }
