@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { LoginService } from '../login.service';
+import { Employee } from '../employee';
 
 @Component({
   selector: 'app-login-form',
@@ -9,12 +11,17 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class LoginFormComponent implements OnInit {
 
   loginForm: FormGroup;
+  employees: Employee;
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private loginService: LoginService
   ) { }
 
   ngOnInit() {
+    this.loginService.getEmployees().subscribe(e => {
+      this.employees = e;
+    });
   }
 
   onSubmit() {
