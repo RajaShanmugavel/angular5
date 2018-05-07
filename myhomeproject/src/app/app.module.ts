@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginService } from './login.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { LoginService } from './login.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    JsonpModule
+    JsonpModule,
+    AppRoutingModule
   ],
   exports: [
   ],
