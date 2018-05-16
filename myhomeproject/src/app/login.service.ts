@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Http, RequestOptions, Headers } from '@angular/http';
+import { RequestOptions, Headers } from '@angular/http';
 
 import { Employee } from './employee';
 import { User } from './user';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class LoginService {
@@ -20,28 +21,27 @@ export class LoginService {
     headers: this.headers
   });
 
-  constructor(private http: Http) {
+  constructor(private httpClient: HttpClient) {
 
   }
 
   authenticateUser(user: User): void {
-    var headers = new Headers();
-    headers.append('Accept', 'application/json');
-    var base64Credential: string = btoa(user.username + ':' + user.password);
-    headers.append('Authorization', 'Basic' + base64Credential);
+    // var headers = new Headers();
+    // headers.append('Accept', 'application/json');
+    // var base64Credential: string = btoa(user.username + ':' + user.password);
+    // headers.append('Authorization', 'Basic' + base64Credential);
 
-    let options = new RequestOptions;
-    options.headers = headers;
+    // let options = new RequestOptions;
+    // options.headers = headers;
 
-    this.http.post(this.API_URL + '/login', options).subscribe(resp => {
-      localStorage.setItem('currentUser', resp.toString());
-    });
+    // this.http.post(this.API_URL + '/login', options).subscribe(resp => {
+    //   localStorage.setItem('currentUser', resp.toString());
+    // });
 
   }
 
   getEmployees(): Observable<Employee[]> {
-    // return this.http.get(this.url);
-    return null;
+    return this.httpClient.get<Employee[]>(this.API_URL + '/get-employees');
   }
 
 }

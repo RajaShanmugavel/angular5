@@ -10,13 +10,15 @@ import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginService } from './login.service';
 import { AppRoutingModule } from './app-routing.module';
+import { EmployeeComponent } from './employee/employee.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
