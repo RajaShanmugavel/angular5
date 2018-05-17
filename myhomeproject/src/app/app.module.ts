@@ -4,6 +4,7 @@ import { JsonpModule, HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +12,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginService } from './login.service';
 import { AppRoutingModule } from './app-routing.module';
 import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeTableComponent } from './employee-table/employee-table.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { EmployeeComponent } from './employee/employee.component';
     AppComponent,
     LoginComponent,
     LoginFormComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EmployeeTableComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { EmployeeComponent } from './employee/employee.component';
     HttpClientModule,
     JsonpModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    MatTableModule
   ],
   exports: [
   ],
