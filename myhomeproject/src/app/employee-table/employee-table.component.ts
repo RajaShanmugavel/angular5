@@ -3,6 +3,7 @@ import { Employee } from '../employee';
 import { DataSource } from '@angular/cdk/table';
 import { Observable } from 'rxjs/Observable';
 import { MatTableDataSource } from '@angular/material/table';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-employee-table',
@@ -16,19 +17,25 @@ export class EmployeeTableComponent implements OnInit {
   @Input()
   populatedEmployees: Employee[];
 
-  dataSource = new MatTableDataSource(this.populatedEmployees);
+  dataSource = new EmployeeDataSource(this.loginService);
 
-  constructor() { }
+  constructor(private loginService: LoginService) {
+  }
 
   ngOnInit() {
   }
 
 }
 
-// export class EmployeeDataSource extends DataSource<any> {
-//   connect(): Observable<Employee[]> {
-//     return null;
-//   }
+export class EmployeeDataSource extends DataSource<any> {
 
-//   disconnect() { }
-// }
+  constructor(private loginService: LoginService) {
+    super();
+  }
+
+  connect(): Observable<Employee[]> {
+    return this.loginService.getEmployees();
+  }
+
+  disconnect() { }
+}
