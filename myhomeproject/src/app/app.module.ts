@@ -5,7 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
@@ -32,7 +33,9 @@ import { EmployeeTableComponent } from './employee-table/employee-table.componen
     JsonpModule,
     AppRoutingModule,
     HttpModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   exports: [
   ],
