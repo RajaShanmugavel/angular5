@@ -1,8 +1,9 @@
 <mat-tab-group>
-  <mat-tab label="Employees"><app-employee-table [populatedEmployees]="employees"></app-employee-table></mat-tab>
-  <mat-tab label="Tab 2">Content 2</mat-tab>
+  <mat-tab label="Employees">
+    <app-employee-table [populatedEmployees]="employees"></app-employee-table>
+  </mat-tab>
+  <mat-tab label="Employee Input">
+    <app-employee-form></app-employee-form>
+  </mat-tab>
 </mat-tab-group>
 
-<!-- <p>
-  <app-employee-table [populatedEmployees]="employees"></app-employee-table>
-</p> -->

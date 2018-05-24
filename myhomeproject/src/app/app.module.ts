@@ -14,6 +14,8 @@ import { LoginService } from './login.service';
 import { AppRoutingModule } from './app-routing.module';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeTableComponent } from './employee-table/employee-table.component';
+import { MatInputModule } from '@angular/material/input';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { EmployeeTableComponent } from './employee-table/employee-table.componen
     LoginComponent,
     LoginFormComponent,
     EmployeeComponent,
-    EmployeeTableComponent
+    EmployeeTableComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { EmployeeTableComponent } from './employee-table/employee-table.componen
     HttpModule,
     MatTableModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   exports: [
   ],
