@@ -1,16 +1,21 @@
-<form>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <label for="exampleInputEmail">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter name">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+    <label for="empId">Id</label>
+    <input type="text" class="form-control" id="empId" formControlName="empId" placeholder="Enter ID">
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck">
-    <label class="form-check-label" for="exampleCheck">Check me out</label>
+    <label for="salary">Salary</label>
+    <input type="input" class="form-control" id="salary" formControlName="salary" placeholder="Enter Salary">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<p>
+  {{ employeeForm.value | json }}
+</p>
+
+<p>Form status: {{ employeeForm.status | json }}</p>
