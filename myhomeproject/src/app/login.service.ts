@@ -44,4 +44,8 @@ export class LoginService {
     return this.httpClient.get<Employee[]>(this.API_URL + '/get-employees');
   }
 
+  saveEmployee(employee: Employee): Observable<any> {
+    return this.httpClient.post<Employee>(this.API_URL + '/add-employee', employee);
+  }
+
 }

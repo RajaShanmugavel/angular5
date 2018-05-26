@@ -10,6 +10,7 @@ import { Employee } from '../employee';
 export class EmployeeComponent implements OnInit {
 
   employees: Employee[] = [];
+  resp: number;
 
   constructor(private loginService: LoginService) { }
 
@@ -20,6 +21,13 @@ export class EmployeeComponent implements OnInit {
   getEmployees() {
     this.loginService.getEmployees().subscribe(res => {
       this.employees = res;
+    });
+  }
+
+  handlePopulatedEmployee(employee: Employee) {
+    console.log('Emitted value:' + employee.name);
+    this.loginService.saveEmployee(employee).subscribe(res => {
+      this.resp = res;
     });
   }
 

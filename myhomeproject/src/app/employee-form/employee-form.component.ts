@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Employee } from '../employee';
 
@@ -10,7 +10,13 @@ import { Employee } from '../employee';
 export class EmployeeFormComponent implements OnInit {
 
   employeeForm: FormGroup;
-  employee = new Employee();
+  employee: Employee = new Employee();
+
+  @Input()
+  resp: number;
+
+  @Output()
+  populatedEmployee = new EventEmitter<Employee>();
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -31,6 +37,7 @@ export class EmployeeFormComponent implements OnInit {
     console.log('employeeForm valid:' + this.employeeForm.valid);
     this.employee = this.employeeForm.value;
     console.log('this.employee:' + this.employee.empId);
+    this.populatedEmployee.emit(this.employee);
   }
 
 }
