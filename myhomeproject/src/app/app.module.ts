@@ -7,15 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginService } from './login.service';
-import { AppRoutingModule } from './app-routing.module';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeTableComponent } from './employee-table/employee-table.component';
-import { MatInputModule } from '@angular/material/input';
-import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
     MatTableModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
   ],
   exports: [
   ],
