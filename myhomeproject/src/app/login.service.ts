@@ -4,7 +4,7 @@ import { RequestOptions, Headers } from '@angular/http';
 
 import { Employee } from './employee';
 import { User } from './user';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Injectable()
 export class LoginService {

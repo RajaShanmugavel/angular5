@@ -1,14 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 .mat-tab-label{
   background: green;
   color:white;
 }
 /* focus style */
 .mat-tab-group.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus, .mat-tab-group.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus{
-  background: red;
+  background: rgb(36, 168, 36);
 }
 /* ink bar style */
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
-  background: yellow;
+  background: blue;
   height: 10px;
 }

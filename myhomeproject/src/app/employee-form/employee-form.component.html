@@ -1,5 +1,21 @@
 <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
+    <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Enter Name" id="name" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field>
+          <textarea matInput placeholder="Enter Employee ID" id="empId" formControlName="empId"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput placeholder="Enter Employee Salary" id="salary" formControlName="salary"></textarea>
+          </mat-form-field>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+  <!-- <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter name">
   </div>
@@ -11,12 +27,12 @@
     <label for="salary">Salary</label>
     <input type="input" class="form-control" id="salary" formControlName="salary" placeholder="Enter Salary">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <button type="submit" class="btn btn-primary">Submit</button> -->
 
-<p>
+
+<!-- <p>
   {{ employeeForm.value | json }}
 </p>
 
-<p>Form status: {{ employeeForm.status | json }}</p>
+<p>Form status: {{ employeeForm.status | json }}</p> -->
 <p *ngIf="resp">Employee Inserted!</p>
