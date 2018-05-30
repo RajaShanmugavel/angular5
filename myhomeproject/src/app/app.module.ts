@@ -18,6 +18,7 @@ import { LoginService } from './login.service';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeTableComponent } from './employee-table/employee-table.component';
+import { EmployeeMainComponent } from './employee-main/employee-main.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { EmployeeTableComponent } from './employee-table/employee-table.componen
     LoginFormComponent,
     EmployeeComponent,
     EmployeeTableComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    EmployeeMainComponent
   ],
   imports: [
     BrowserModule,
