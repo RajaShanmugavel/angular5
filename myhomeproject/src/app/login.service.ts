@@ -10,16 +10,17 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class LoginService {
 
   url = 'http://localhost:8080/show-time';
-  API_URL = 'http://localhost:8080';
+  // API_URL = 'http://localhost:8080';
+  API_URL = 'http://localhost:3000/employees';
 
-  headers = new Headers({
-    'Authorization': 'Basic ',
-    'X-Requested-With': 'XMLHttpRequest' // to suppress 401 browser popup
-  });
+  // headers = new Headers({
+  //   'Authorization': 'Basic ',
+  //   'X-Requested-With': 'XMLHttpRequest' // to suppress 401 browser popup
+  // });
 
-  options = new RequestOptions({
-    headers: this.headers
-  });
+  // options = new RequestOptions({
+  //   headers: this.headers
+  // });
 
   constructor(private httpClient: HttpClient) {
 
@@ -41,11 +42,11 @@ export class LoginService {
   }
 
   getEmployees(): Observable<Employee[]> {
-    return this.httpClient.get<Employee[]>(this.API_URL + '/get-employees');
+    return this.httpClient.get<Employee[]>(this.API_URL);
   }
 
   saveEmployee(employee: Employee): Observable<any> {
-    return this.httpClient.post<Employee>(this.API_URL + '/add-employee', employee);
+    return this.httpClient.post<Employee>(this.API_URL, employee);
   }
 
 }
