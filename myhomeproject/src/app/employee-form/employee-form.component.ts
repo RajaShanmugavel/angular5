@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input, OnChanges } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Employee } from '../employee';
 
@@ -7,10 +7,13 @@ import { Employee } from '../employee';
   templateUrl: './employee-form.component.html',
   styleUrls: ['./employee-form.component.css']
 })
-export class EmployeeFormComponent implements OnInit {
+export class EmployeeFormComponent implements OnInit, OnChanges {
 
   employeeForm: FormGroup;
   employee: Employee = new Employee();
+
+  @Input()
+  editEmployee: Employee;
 
   @Input()
   resp: number;
@@ -31,6 +34,23 @@ export class EmployeeFormComponent implements OnInit {
   }
 
   ngOnInit() {
+    // if (this.editEmployee) {
+    //   this.employeeForm.setValue({
+    //     name: this.editEmployee.name,
+    //     empId: this.editEmployee.empId,
+    //     salary: this.editEmployee.salary
+    //   });
+    // }
+  }
+
+  ngOnChanges() {
+    if (this.editEmployee) {
+      this.employeeForm.setValue({
+        name: this.editEmployee.name,
+        empId: this.editEmployee.empId,
+        salary: this.editEmployee.salary
+      });
+    }
   }
 
   onSubmit() {

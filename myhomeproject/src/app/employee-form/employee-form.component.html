@@ -1,25 +1,42 @@
-<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+<form
+  [formGroup]="employeeForm"
+  (ngSubmit)="onSubmit()"
+>
   <div class="example-container">
     <mat-form-field>
-      <input matInput placeholder="Enter Name" id="name" formControlName="name">
+      <input
+        matInput
+        placeholder="Enter Name"
+        id="name"
+        formControlName="name"
+      >
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Enter Employee ID" id="empId" formControlName="empId">
+      <input
+        matInput
+        placeholder="Enter Employee ID"
+        id="empId"
+        formControlName="empId"
+      >
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Enter Employee Salary" id="salary" formControlName="salary">
-      <span matPrefix>$&nbsp;</span>
+      <input
+        matInput
+        placeholder="Enter Employee Salary"
+        id="salary"
+        formControlName="salary"
+      >
+      <span matPrefix>$</span>
     </mat-form-field>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button
+    type="submit"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
 
 </form>
-
-<!-- <p>
-  {{ employeeForm.value | json }}
-</p>
-<p>Form status: {{ employeeForm.status | json }}</p>
--->
 
 <p *ngIf="resp">Employee Inserted!</p>

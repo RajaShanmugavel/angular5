@@ -1,12 +1,22 @@
 <mat-card>
   <mat-card-header>Input Employee</mat-card-header>
   <mat-card-content>
-    <app-employee-form (populatedEmployee)="handlePopulatedEmployee($event)" [resp]="resp"></app-employee-form>
+    <app-employee-form
+      (populatedEmployee)="handlePopulatedEmployee($event)"
+      [resp]="resp"
+      [editEmployee]="employee"
+    >
+    </app-employee-form>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-header>List of Employees</mat-card-header>
   <mat-card-content>
-    <app-employee-table [populatedEmployees]="employees"></app-employee-table>
+    <app-employee-table
+      [populatedEmployees]="employees"
+      (editEmployee)="handleEditEmployee($event)"
+      (delEmployee)="handleDelEmployee($event)"
+    >
+    </app-employee-table>
   </mat-card-content>
 </mat-card>

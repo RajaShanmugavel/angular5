@@ -11,6 +11,7 @@ export class EmployeeComponent implements OnInit {
 
   employees: Employee[] = [];
   resp: number;
+  employee: Employee;
 
   constructor(private loginService: LoginService) { }
 
@@ -29,6 +30,14 @@ export class EmployeeComponent implements OnInit {
     this.loginService.saveEmployee(employee).subscribe(res => {
       this.resp = res;
     });
+  }
+
+  handleEditEmployee(employee: Employee) {
+    this.employee = employee;
+  }
+
+  handleDelEmployee(employee: Employee) {
+
   }
 
 }

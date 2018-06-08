@@ -1,8 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Employee } from '../employee';
 import { DataSource } from '@angular/cdk/table';
 import { Observable } from 'rxjs/Observable';
 import { MatTableDataSource } from '@angular/material/table';
+
 import { LoginService } from '../login.service';
 
 @Component({
@@ -12,10 +13,16 @@ import { LoginService } from '../login.service';
 })
 export class EmployeeTableComponent implements OnInit {
 
-  displayedColumns = ['name', 'empId', 'salary'];
+  displayedColumns = ['name', 'empId', 'salary', 'actions'];
 
   @Input()
   populatedEmployees: Employee[];
+
+  @Output()
+  editEmployee = new EventEmitter<Employee>();
+
+  @Output()
+  delEmployee = new EventEmitter<Employee>();
 
   dataSource = new EmployeeDataSource(this.loginService);
 
@@ -23,6 +30,14 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onEdit(employee: Employee) {
+    this.editEmployee.emit(employee);
+  }
+
+  onDel(employee: Employee) {
+    this.delEmployee.emit(employee);
   }
 
 }
