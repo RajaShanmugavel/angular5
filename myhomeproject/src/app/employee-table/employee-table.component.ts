@@ -19,7 +19,7 @@ export class EmployeeTableComponent implements OnInit {
   populatedEmployees: Employee[];
 
   @Output()
-  editEmployee = new EventEmitter<Employee>();
+  editEmployee = new EventEmitter<any>();
 
   @Output()
   delEmployee = new EventEmitter<Employee>();
@@ -32,8 +32,8 @@ export class EmployeeTableComponent implements OnInit {
   ngOnInit() {
   }
 
-  onEdit(employee: Employee) {
-    this.editEmployee.emit(employee);
+  onEdit(employee: Employee, index: number) {
+    this.editEmployee.emit({ employee: employee, index: index });
   }
 
   onDel(employee: Employee) {

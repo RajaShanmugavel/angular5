@@ -32,8 +32,10 @@ export class EmployeeComponent implements OnInit {
     });
   }
 
-  handleEditEmployee(employee: Employee) {
-    this.employee = employee;
+  handleEditEmployee(employee: Employee, index: number) {
+    console.log(employee);
+    console.log(index);
+    // this.employee = { id: index, name: employee.name, empId: employee.empId, salary: employee.salary };
   }
 
   handleDelEmployee(employee: Employee) {
