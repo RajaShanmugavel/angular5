@@ -33,7 +33,7 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   onEdit(employee: Employee, index: number) {
-    this.editEmployee.emit({ employee: employee, index: index });
+    this.editEmployee.emit(employee);
   }
 
   onDel(employee: Employee) {

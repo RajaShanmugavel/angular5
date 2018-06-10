@@ -26,15 +26,15 @@ export class EmployeeComponent implements OnInit {
   }
 
   handlePopulatedEmployee(employee: Employee) {
-    console.log('Emitted value:' + employee.name);
     this.loginService.saveEmployee(employee).subscribe(res => {
       this.resp = res;
     });
   }
 
   handleEditEmployee(employee: Employee, index: number) {
-    console.log(employee);
-    console.log(index);
+    this.employee = employee;
+    // console.log(employee);
+    // console.log(index);
     // this.employee = { id: index, name: employee.name, empId: employee.empId, salary: employee.salary };
   }
 

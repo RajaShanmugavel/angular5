@@ -27,6 +27,7 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
 
   createForm() {
     this.employeeForm = this.fb.group({
+      id: '',
       name: ['', Validators.required],
       empId: '',
       salary: ''
@@ -46,6 +47,7 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
   ngOnChanges() {
     if (this.editEmployee) {
       this.employeeForm.setValue({
+        id: this.editEmployee.id,
         name: this.editEmployee.name,
         empId: this.editEmployee.empId,
         salary: this.editEmployee.salary
@@ -56,7 +58,7 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
   onSubmit() {
     console.log('employeeForm valid:' + this.employeeForm.valid);
     this.employee = this.employeeForm.value;
-    console.log('this.employee:' + this.employee.empId);
+    console.log('this.employee:' + this.employee.id);
     this.populatedEmployee.emit(this.employee);
   }
 
