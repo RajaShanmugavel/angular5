@@ -67,4 +67,8 @@ export class LoginService {
     }
   }
 
+  deleteEmployee(employee: Employee): Observable<any> {
+    return this.httpClient.delete<Employee>(this.API_URL + '/' + employee.id, null);
+  }
+
 }
