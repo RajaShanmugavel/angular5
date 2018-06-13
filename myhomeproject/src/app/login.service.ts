@@ -46,7 +46,25 @@ export class LoginService {
   }
 
   saveEmployee(employee: Employee): Observable<any> {
-    return this.httpClient.post<Employee>(this.API_URL, employee);
+    if (employee.id) {
+      // below is not required. But still...
+      employee = {
+        ...employee,
+        id: employee.id,
+        name: employee.name,
+        empId: employee.empId,
+        salary: employee.salary
+      };
+      return this.httpClient.put<Employee>(this.API_URL + '/' + employee.id, employee);
+    } else {
+      employee = {
+        ...employee,
+        name: employee.name,
+        empId: employee.empId,
+        salary: employee.salary
+      };
+      return this.httpClient.post<Employee>(this.API_URL, employee);
+    }
   }
 
 }
