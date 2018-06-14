@@ -35,13 +35,6 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    // if (this.editEmployee) {
-    //   this.employeeForm.setValue({
-    //     name: this.editEmployee.name,
-    //     empId: this.editEmployee.empId,
-    //     salary: this.editEmployee.salary
-    //   });
-    // }
   }
 
   ngOnChanges() {

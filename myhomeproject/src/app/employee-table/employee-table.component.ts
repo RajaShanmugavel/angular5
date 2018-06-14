@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { Employee } from '../employee';
 import { DataSource } from '@angular/cdk/table';
 import { Observable } from 'rxjs/Observable';
@@ -11,12 +11,15 @@ import { LoginService } from '../login.service';
   templateUrl: './employee-table.component.html',
   styleUrls: ['./employee-table.component.css']
 })
-export class EmployeeTableComponent implements OnInit {
+export class EmployeeTableComponent implements OnInit, OnChanges {
 
   displayedColumns = ['name', 'empId', 'salary', 'actions'];
 
   @Input()
   populatedEmployees: Employee[];
+
+  @Input()
+  resp: number;
 
   @Output()
   editEmployee = new EventEmitter<any>();
@@ -30,6 +33,13 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    debugger;
+    if (changes['resp']) {
+      this.dataSource.connect();
+    }
   }
 
   onEdit(employee: Employee, index: number) {
