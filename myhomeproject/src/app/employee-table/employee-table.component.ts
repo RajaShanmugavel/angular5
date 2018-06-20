@@ -36,16 +36,17 @@ export class EmployeeTableComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    debugger;
     if (changes['resp']) {
       this.dataSource.connect();
     }
   }
 
+  // on Edit
   onEdit(employee: Employee, index: number) {
     this.editEmployee.emit(employee);
   }
 
+  // On Delete
   onDel(employee: Employee) {
     this.delEmployee.emit(employee);
   }
