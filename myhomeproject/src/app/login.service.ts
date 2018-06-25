@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { RequestOptions, Headers } from '@angular/http';
 
 import { Employee } from './employee';
 import { User } from './user';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class LoginService {
@@ -45,7 +44,7 @@ export class LoginService {
     return this.httpClient.get<Employee[]>(this.API_URL);
   }
 
-  saveEmployee(employee: Employee): Observable<any> {
+  saveEmployee(employee: Employee): Observable<Employee> {
     if (employee.id) {
       // below is not required. But still...
       employee = {
@@ -67,8 +66,8 @@ export class LoginService {
     }
   }
 
-  deleteEmployee(employee: Employee): Observable<any> {
-    return this.httpClient.delete<Employee>(this.API_URL + '/' + employee.id, null);
+  deleteEmployee(employee: Employee): Observable<Employee> {
+    return this.httpClient.delete<Employee>(this.API_URL + '/' + employee.id, employee);
   }
 
 }
