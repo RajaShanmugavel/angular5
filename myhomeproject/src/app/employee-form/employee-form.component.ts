@@ -48,11 +48,16 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
     }
   }
 
+  clear() {
+    this.employeeForm.reset();
+  }
+
   onSubmit() {
     console.log('employeeForm valid:' + this.employeeForm.valid);
     this.employee = this.employeeForm.value;
     console.log('this.employee:' + this.employee.id);
     this.populatedEmployee.emit(this.employee);
+    this.clear();
   }
 
 }

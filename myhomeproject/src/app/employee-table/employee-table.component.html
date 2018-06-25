@@ -1,7 +1,7 @@
 <div class="example-container mat-elevation-z8">
   <mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef >Name</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
       <mat-cell *matCellDef="let emp">{{emp.name}}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="empId">
@@ -20,14 +20,14 @@
           class="btn btn-info"
           (click)="onEdit(emp, i)"
         >
-          edit
+          <i class="fa fa-pencil"></i>
         </button> 
         <button
           type="button"
           class="btn btn-danger"
           (click)="onDel(emp)"
         >
-          del
+        <i class="fa fa-trash"></i>
         </button>
       </mat-cell>
     </ng-container>
