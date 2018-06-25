@@ -10,7 +10,7 @@ import { Employee } from '../employee';
 export class EmployeeComponent implements OnInit {
 
   employees: Employee[] = [];
-  resp: number;
+  resp: Employee;
   employee: Employee;
 
   constructor(private loginService: LoginService) { }

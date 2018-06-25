@@ -37,7 +37,7 @@ export class EmployeeTableComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['resp']) {
-      this.dataSource.connect();
+      this.dataSource = new EmployeeDataSource(this.loginService);
     }
   }
 
