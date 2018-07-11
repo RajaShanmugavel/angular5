@@ -25,6 +25,11 @@ export class EmployeeComponent implements OnInit {
     });
   }
 
+  /**
+   * Handle the emitted employee and call saveEmployee() method
+   *
+   * @param employee
+   */
   handlePopulatedEmployee(employee: Employee) {
     this.loginService.saveEmployee(employee).subscribe(res => {
       this.resp = res;
@@ -32,6 +37,12 @@ export class EmployeeComponent implements OnInit {
     });
   }
 
+  /**
+   * Handle the emitted employee and assign to local for edit
+   *
+   * @param employee
+   * @param index
+   */
   handleEditEmployee(employee: Employee, index: number) {
     this.employee = employee;
   }
