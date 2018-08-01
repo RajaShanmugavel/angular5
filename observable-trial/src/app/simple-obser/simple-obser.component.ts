@@ -12,6 +12,9 @@ export class SimpleObserComponent implements OnInit {
 
   constructor() { }
 
+  /**
+   * This needs to be amended.
+   */
   ngOnInit() {
     interval(1000).pipe(
       map((x) => {
