@@ -13,7 +13,7 @@ export class SimpleObserComponent implements OnInit {
   constructor() { }
 
   /**
-   * This needs to be amended.
+   * This needs to be amended, as pipe command has been upated in Angular 6
    */
   ngOnInit() {
     interval(1000).pipe(
