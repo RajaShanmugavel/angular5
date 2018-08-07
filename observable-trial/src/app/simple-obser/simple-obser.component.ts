@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { interval } from 'rxjs';
+import { Observer } from 'rxjs/Observer';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -12,15 +12,37 @@ export class SimpleObserComponent implements OnInit {
 
   constructor() { }
 
-  /**
-   * This needs to be amended, as pipe command has been upated in Angular 6
-   */
   ngOnInit() {
-    interval(1000).pipe(
-      map((x) => {
-        console.log(x);
-      })
+    // interval(1000).pipe(
+    //   map((x) => {
+    //     console.log(x);
+    //   })
+    // );
+
+    const myObservable = Observable.create((observer: Observer<string>) => {
+      setTimeout(() => {
+        observer.next('first package');
+      }, 2000);
+      setTimeout(() => {
+        observer.next('second package');
+      }, 4000);
+      setTimeout(() => {
+        observer.error('this is not going to work!')
+      }, 5000);
+    });
+
+    myObservable.subscribe(
+      (data: string) => {
+        console.log(data);
+      },
+      (error: string) => {
+        console.log(error);
+      },
+      () => {
+        console.log('completed');
+      }
     );
+
   }
 
 }
