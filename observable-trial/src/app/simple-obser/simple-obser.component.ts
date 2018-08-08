@@ -19,6 +19,7 @@ export class SimpleObserComponent implements OnInit {
     //   })
     // );
 
+    // An Observable with observer parameter
     const myObservable = Observable.create((observer: Observer<string>) => {
       setTimeout(() => {
         observer.next('first package');
@@ -31,6 +32,7 @@ export class SimpleObserComponent implements OnInit {
       }, 5000);
     });
 
+    // Subsribes to the above Observerable.
     myObservable.subscribe(
       (data: string) => {
         console.log(data);
