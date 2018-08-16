@@ -32,7 +32,9 @@ export class SimpleObserComponent implements OnInit {
       }, 5000);
     });
 
-    // Subsribes to the above Observerable.
+    /**
+     * Subsribes to the above Observerable.
+     */
     myObservable.subscribe(
       (data: string) => {
         console.log(data);
