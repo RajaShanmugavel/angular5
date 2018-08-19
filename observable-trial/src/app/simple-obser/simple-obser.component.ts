@@ -28,8 +28,11 @@ export class SimpleObserComponent implements OnInit {
         observer.next('second package');
       }, 4000);
       setTimeout(() => {
-        observer.error('this is not going to work!')
+        observer.complete();
       }, 5000);
+      setTimeout(() => {
+        observer.next('third package');
+      }, 6000);
     });
 
     /**
