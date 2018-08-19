@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Observer } from 'rxjs/Observer';
 import { map } from 'rxjs/operators';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-simple-obser',
   templateUrl: './simple-obser.component.html',
   styleUrls: ['./simple-obser.component.css']
 })
-export class SimpleObserComponent implements OnInit {
+export class SimpleObserComponent implements OnInit, OnDestroy {
+
+  mySubs: Subscription;
 
   constructor() { }
 
@@ -18,6 +21,10 @@ export class SimpleObserComponent implements OnInit {
     //     console.log(x);
     //   })
     // );
+
+    ngOnDestroy() {
+      this.mySubs.unsubscribe();
+    }
 
     // An Observable with observer parameter
     const myObservable = Observable.create((observer: Observer<string>) => {
@@ -39,7 +46,7 @@ export class SimpleObserComponent implements OnInit {
     /**
      * Subsribes to the above Observerable.
      */
-    myObservable.subscribe(
+    this.mySubs = myObservable.subscribe(
       (data: string) => {
         console.log(data);
       },
