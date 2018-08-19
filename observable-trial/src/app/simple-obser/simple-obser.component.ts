@@ -31,6 +31,7 @@ export class SimpleObserComponent implements OnInit {
         observer.complete();
       }, 5000);
       setTimeout(() => {
+        // This never happens as the observer is complete before this step..
         observer.next('third package');
       }, 6000);
     });
