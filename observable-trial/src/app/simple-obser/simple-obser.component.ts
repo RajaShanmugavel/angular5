@@ -36,7 +36,7 @@ export class SimpleObserComponent implements OnInit, OnDestroy {
         observer.next('second package');
       }, 4000);
       setTimeout(() => {
-
+// Test comment...
         observer.complete();
       }, 5000);
       setTimeout(() => {
