@@ -22,6 +22,7 @@ export class SimpleObserComponent implements OnInit, OnDestroy {
     //   })
     // );
 
+    // This unsubscribes the Observable..
     ngOnDestroy() {
       this.mySubs.unsubscribe();
     }
@@ -35,7 +36,7 @@ export class SimpleObserComponent implements OnInit, OnDestroy {
         observer.next('second package');
       }, 4000);
       setTimeout(() => {
-        // This unsubscribes the Observable..
+
         observer.complete();
       }, 5000);
       setTimeout(() => {
