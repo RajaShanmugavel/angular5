@@ -15,6 +15,9 @@ export class EmployeeComponent implements OnInit {
 
   constructor(private loginService: LoginService) { }
 
+  /**
+   * On Init
+   */
   ngOnInit() {
     this.getEmployees();
   }
