@@ -2,6 +2,12 @@
   [formGroup]="employeeForm"
   (ngSubmit)="onSubmit()"
 >
+
+<!-- <div *ngIf="employeeForm.invalid" class="alert alert-danger">
+  Form invalid
+  <div>{{editEmployee | json}}</div>
+</div> -->
+
   <div class="example-container">
     <mat-form-field>
       <input
@@ -40,3 +46,4 @@
 </form>
 
 <p *ngIf="resp">Employee Inserted!</p>
+

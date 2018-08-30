@@ -28,9 +28,9 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
   createForm() {
     this.employeeForm = this.fb.group({
       id: '',
-      name: ['', Validators.required],
-      empId: '',
-      salary: ''
+      name: new FormControl('', Validators.required),
+      empId: ['', Validators.required],
+      salary: ['', Validators.required]
     });
   }
 
@@ -54,10 +54,12 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
 
   onSubmit() {
     console.log('employeeForm valid:' + this.employeeForm.valid);
-    this.employee = this.employeeForm.value;
-    console.log('this.employee:' + this.employee.id);
-    this.populatedEmployee.emit(this.employee);
-    this.clear();
+    if (this.employeeForm.valid) {
+      this.employee = this.employeeForm.value;
+      console.log('this.employee:' + this.employee.id);
+      this.populatedEmployee.emit(this.employee);
+      this.clear();
+      }
   }
 
 }
