@@ -51,6 +51,10 @@ export class EmployeeTableComponent implements OnInit, OnChanges {
     this.delEmployee.emit(employee);
   }
 
+  onRowClick(employee: Employee) {
+    console.log('row click ->' + employee.name);
+  }
+
 }
 
 export class EmployeeDataSource extends DataSource<any> {

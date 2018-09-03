@@ -11,3 +11,11 @@
   background: blue;
   height: 10px;
 }
+
+.mat-row:hover {
+  background-color: rgb(241, 244, 247);
+}
+
+.sortable tr {
+  cursor: crosshair;
+}
