@@ -3,7 +3,10 @@ export class Employee {
   name: string;
   salary: number;
   dob: Date = new Date();
-  qualifications: string[];
+  qualifications: Qualification[];
+}
 
-
+export class Qualification {
+  degree: string;
+  isDoctorate: boolean;
 }
