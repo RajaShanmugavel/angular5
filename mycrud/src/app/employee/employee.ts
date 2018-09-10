@@ -3,7 +3,7 @@ export class Employee {
   name: string;
   salary: number;
   dob: Date = new Date();
-  qualifications: Qualification[];
+  // qualifications: Qualification[];
 }
 
 export class Qualification {

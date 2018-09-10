@@ -18,8 +18,7 @@ export class RegisterFormComponent implements OnInit {
       id: null,
       name: null,
       salary: null,
-      dob: null,
-      qualifications: null
+      dob: null
     });
   }
 
