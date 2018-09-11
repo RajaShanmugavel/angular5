@@ -24,7 +24,5 @@ export class RegisterFormComponent implements OnInit {
 
   ngOnInit() {}
 
-  onSubmit() {
-
-  }
+  onSubmit() {}
 }
