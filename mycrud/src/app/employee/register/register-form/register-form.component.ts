@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Employee } from '../../employee';
 
 @Component({
@@ -15,10 +15,10 @@ export class RegisterFormComponent implements OnInit {
 
   createForm() {
     this.registerForm = this.fb.group({
-      id: null,
-      name: null,
-      salary: null,
-      dob: null
+      id: ['', Validators.required],
+      name: ['', Validators.required],
+      salary: ['', Validators.required],
+      dob: ['', Validators.required]
     });
   }
 
