@@ -11,6 +11,7 @@ import { RegisterMainComponent } from './employee/register/register-main/registe
 import { RegisterFormComponent } from './employee/register/register-form/register-form.component';
 import { RegisterTableComponent } from './employee/register/register-table/register-table.component';
 
+// Add all the necessary components here..
 @NgModule({
   declarations: [
     AppComponent,
