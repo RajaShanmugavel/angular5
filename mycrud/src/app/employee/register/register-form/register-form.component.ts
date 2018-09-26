@@ -22,7 +22,9 @@ export class RegisterFormComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.createForm();
+  }
 
   onSubmit() {}
 }
