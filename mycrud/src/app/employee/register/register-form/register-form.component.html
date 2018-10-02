@@ -1,42 +1,45 @@
-<div *ngIf='registerForm'>
-<!-- The above condition is needed for handling the form rendering for first time when no form created -->
-<form
-  [formGroup]="registerForm"
-  (ngSubmit)="onSubmit()"
->
+<div *ngIf="registerForm">
+  <!-- The above condition is needed for handling the form rendering for first time when no form created -->
+  <form
+    [formGroup]="registerForm"
+    (ngSubmit)="onSubmit()"
+  >
 
-  <div class="example-container">
+    <div class="example-container">
 
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Enter Name"
-        id="name"
-        formControlName="name"
-      >
-    </mat-form-field>
-    <br/>
-    <!-- Use correct formatting later using CSS-->
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Enter Salary"
-        id="salary"
-        formControlName="salary"
-      >
-    </mat-form-field>
-    <br/>
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Enter date of birth"
-        id="dob"
-        formControlName="dob"
-      >
-    </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Enter Name"
+          id="name"
+          formControlName="name"
+        >
+      </mat-form-field>
+      <br>
+      <!-- Use correct formatting later using CSS -->
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Enter Salary"
+          id="salary"
+          formControlName="salary"
+        >
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Choose a date"
+        >
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
 
+    </div>
 
-  </div>
-
-</form>
+  </form>
 </div>
