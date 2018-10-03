@@ -68,7 +68,9 @@ import { RegisterTableComponent } from './employee/register/register-table/regis
     MatCardModule,
     HttpClientModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatButtonModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
