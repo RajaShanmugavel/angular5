@@ -18,7 +18,15 @@ export class RegisterFormComponent implements OnInit {
       id: '',
       name: ['', Validators.required],
       salary: ['', Validators.required],
-      dob: ['', Validators.required]
+      dob: ['', Validators.required],
+      qualifications: this.fb.array([this.initEmployeeForm()])
+    });
+  }
+
+  initEmployeeForm() {
+    return this.fb.group({
+      degree: '',
+      college: ''
     });
   }
 

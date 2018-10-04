@@ -8,5 +8,5 @@ export class Employee {
 
 export class Qualification {
   degree: string;
-  isDoctorate: boolean;
+  college: string;
 }
