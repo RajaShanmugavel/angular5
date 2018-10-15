@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { Employee } from '../../employee';
 
 @Component({
@@ -31,6 +31,16 @@ export class RegisterFormComponent implements OnInit {
       degree: '',
       college: ''
     });
+  }
+
+  addQualification() {
+    const control = <FormArray>this.registerForm.controls['qualifications'];
+    control.push(this.initEmployeeForm());
+  }
+
+  removeQualification(i: number) {
+    const control = <FormArray>this.registerForm.controls['qualifications'];
+    control.removeAt(i);
   }
 
   ngOnInit() {
