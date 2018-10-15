@@ -38,10 +38,41 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
-      <br>
+      <div *ngFor="let quali of registerForm.controls; let i=index">
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Enter degree"
+            id="degree"
+            formControlName="degree"
+          >
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Enter college"
+            id="college"
+            formControlName="college"
+          >
+        </mat-form-field>
+      </div>
+      <div>
+        <button
+          mat-raised-button
+          color="secondary"
+          (click)="addQualification()"
+        >
+          Add
+        </button>
+      </div>
 
-      <button mat-raised-button color="primary">Submit</button>
-      &nbsp;
+      <button
+        mat-raised-button
+        color="primary"
+      >
+        Submit
+      </button> 
+
       <button mat-raised-button>Cancel</button>
 
     </div>

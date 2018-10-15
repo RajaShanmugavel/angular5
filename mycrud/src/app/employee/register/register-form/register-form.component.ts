@@ -13,6 +13,10 @@ export class RegisterFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {}
 
+  ngOnInit() {
+    this.createForm();
+  }
+
   /**
    * Creates a Nested Form
    */
@@ -41,10 +45,6 @@ export class RegisterFormComponent implements OnInit {
   removeQualification(i: number) {
     const control = <FormArray>this.registerForm.controls['qualifications'];
     control.removeAt(i);
-  }
-
-  ngOnInit() {
-    this.createForm();
   }
 
   onSubmit() {}
