@@ -38,7 +38,10 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
-      <div *ngFor="let quali of registerForm.controls; let i=index">
+      <!-- have to find out why the below syntax error is appearing... though compiles and works fine -->
+      <div formArrayName = "qualifications"
+        *ngFor="let regi of registerForm.get('qualifications').controls; let i=index;">
+        <div [formGroupName]="i">
         <mat-form-field>
           <input
             matInput
@@ -55,6 +58,7 @@
             formControlName="college"
           >
         </mat-form-field>
+        </div>
       </div>
       <div>
         <button

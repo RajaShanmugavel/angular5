@@ -22,18 +22,19 @@ export class RegisterFormComponent implements OnInit {
    */
   createForm() {
     this.registerForm = this.fb.group({
-      id: '',
-      name: ['', Validators.required],
-      salary: ['', Validators.required],
-      dob: ['', Validators.required],
+      id: null,
+      name: [null, Validators.required],
+      salary: [null, Validators.required],
+      dob: [null, Validators.required],
       qualifications: this.fb.array([this.initEmployeeForm()])
     });
   }
 
   initEmployeeForm() {
     return this.fb.group({
-      degree: '',
-      college: ''
+      id: null,
+      degree: null,
+      college: null
     });
   }
 
