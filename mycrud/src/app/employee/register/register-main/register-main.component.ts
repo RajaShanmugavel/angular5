@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Employee } from '../../employee';
 
 @Component({
   selector: 'app-register-main',
@@ -6,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-main.component.css']
 })
 export class RegisterMainComponent implements OnInit {
+
+  employee: Employee;
+
   constructor() {}
 
   ngOnInit() {}
+
+  handleUpdatedEmployee(employee: Employee) {
+    this.employee = employee;
+  }
 }

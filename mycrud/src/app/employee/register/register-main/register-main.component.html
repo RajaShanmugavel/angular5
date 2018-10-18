@@ -1,8 +1,8 @@
 <mat-tab-group>
   <mat-tab label="Employees">
-    <app-register-form></app-register-form>
+    <app-register-form (updatedEmployee)="handleUpdatedEmployee($event)"></app-register-form>
   </mat-tab>
   <mat-tab label="Employee Table">
-    <app-register-table></app-register-table>
+    <app-register-table [displayEmployee]="employee"></app-register-table>
   </mat-tab>
 </mat-tab-group>

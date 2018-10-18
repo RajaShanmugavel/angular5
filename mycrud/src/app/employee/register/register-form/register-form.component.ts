@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { Employee } from '../../employee';
 
@@ -10,6 +10,9 @@ import { Employee } from '../../employee';
 export class RegisterFormComponent implements OnInit {
   registerForm: FormGroup;
   employee: Employee = new Employee();
+
+  @Output()
+  updatedEmployee = new EventEmitter<Employee>();
 
   constructor(private fb: FormBuilder) {}
 
@@ -48,5 +51,9 @@ export class RegisterFormComponent implements OnInit {
     control.removeAt(i);
   }
 
-  onSubmit() {}
+  onSubmit() {
+    // alert('submit');
+    const ctrl = this.registerForm.value;
+    this.updatedEmployee.emit(ctrl);
+  }
 }
