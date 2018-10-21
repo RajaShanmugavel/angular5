@@ -8,12 +8,11 @@ import { Employee } from '../employee';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-
   employees: Employee[] = [];
   resp: Employee;
   employee: Employee;
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService) {}
 
   /**
    * On Init
@@ -60,5 +59,4 @@ export class EmployeeComponent implements OnInit {
       this.getEmployees();
     });
   }
-
 }

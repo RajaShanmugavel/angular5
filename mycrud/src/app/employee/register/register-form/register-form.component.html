@@ -39,25 +39,27 @@
       </mat-form-field>
 
       <!-- have to find out why the below syntax error is appearing... though compiles and works fine -->
-      <div formArrayName = "qualifications"
-        *ngFor="let regi of registerForm.get('qualifications').controls; let i=index;">
+      <div
+        formArrayName="qualifications"
+        *ngFor="let regi of registerForm.get('qualifications').controls; let i=index;"
+      >
         <div [formGroupName]="i">
-        <mat-form-field>
-          <input
-            matInput
-            placeholder="Enter degree"
-            id="degree"
-            formControlName="degree"
-          >
-        </mat-form-field>
-        <mat-form-field>
-          <input
-            matInput
-            placeholder="Enter college"
-            id="college"
-            formControlName="college"
-          >
-        </mat-form-field>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder="Enter degree"
+              id="degree"
+              formControlName="degree"
+            >
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder="Enter college"
+              id="college"
+              formControlName="college"
+            >
+          </mat-form-field>
         </div>
       </div>
       <div>
