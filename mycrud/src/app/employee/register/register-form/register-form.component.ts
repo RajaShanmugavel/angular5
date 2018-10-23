@@ -52,7 +52,6 @@ export class RegisterFormComponent implements OnInit {
   }
 
   onSubmit() {
-    // alert('submit');
     const ctrl = this.registerForm.value;
     this.updatedEmployee.emit(ctrl);
   }
