@@ -41,10 +41,19 @@ export class RegisterFormComponent implements OnInit {
     });
   }
 
+  /**
+   * Adds a new Qualification
+   */
   addQualification() {
     const control = <FormArray>this.registerForm.controls['qualifications'];
     control.push(this.initEmployeeForm());
   }
+
+  /**
+   * Removes a Qualification
+   *
+   * @param i
+   */
 
   removeQualification(i: number) {
     const control = <FormArray>this.registerForm.controls['qualifications'];
