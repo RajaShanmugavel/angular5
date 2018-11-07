@@ -47,7 +47,7 @@ import { RegisterComponent } from './employee/register/register.component';
 import { RegisterMainComponent } from './employee/register/register-main/register-main.component';
 import { RegisterFormComponent } from './employee/register/register-form/register-form.component';
 import { RegisterTableComponent } from './employee/register/register-table/register-table.component';
-import { AccountComponent } from './account/account.component';
+import { AccountComponent } from './employee/account/account.component';
 import { AccountFormComponent } from './employee/account/account-form/account-form.component';
 import { AccountMainComponent } from './employee/account/account-main/account-main.component';
 import { AccountTableComponent } from './employee/account/account-table/account-table.component';
