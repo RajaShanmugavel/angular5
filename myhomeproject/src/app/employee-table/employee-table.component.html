@@ -21,8 +21,6 @@
           (click)="onEdit(emp, i)"
         >
 
-
-
           <i class="fa fa-pencil"></i>
         </button> 
         <button
@@ -30,12 +28,15 @@
           class="btn btn-danger"
           (click)="onDel(emp)"
         >
-        <i class="fa fa-trash"></i>
+          <i class="fa fa-trash"></i>
         </button>
       </mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onRowClick(row)"></mat-row>
+    <mat-row
+      *matRowDef="let row; columns: displayedColumns;"
+      (click)="onRowClick(row)"
+    ></mat-row>
   </mat-table>
 </div>
