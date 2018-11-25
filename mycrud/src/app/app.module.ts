@@ -8,6 +8,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFileUploadModule } from 'angular-material-fileupload';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -78,7 +79,8 @@ import { AccountTableComponent } from './employee/account/account-table/account-
     MatNativeDateModule,
     MatDatepickerModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatFileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
