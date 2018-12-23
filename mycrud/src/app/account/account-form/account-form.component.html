@@ -9,17 +9,21 @@
       </div>
       <div class="col md-8">
         <input
+          id="name"
           type="text"
+          formControlName="name"
           class="form-control"
         >
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <label for="name">Date of birth:</label>
+        <label for="dob">Date of birth:</label>
       </div>
       <div class="col md-8">
         <input
+          id="dob"
+          formControlName="dob"
           type="text"
           class="form-control"
         >
@@ -27,23 +31,35 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <label for="name">Gender:</label>
+        <label for="gender">Gender:</label>
       </div>
       <div class="col md-4">
         <input
-        type="radio"
-        name="name"
-        class="form-control"
+          type="radio"
+          value="male"
+          formControlName="gender"
+          class="form-control"
         >
         Male
       </div>
       <div class="col md-4">
         <input
-        type="radio"
-        name="name"
-        class="form-control"
+          type="radio"
+          value="female"
+          formControlName="gender"
+          class="form-control"
         >
         Female
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
       </div>
     </div>
   </div>
