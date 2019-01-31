@@ -52,6 +52,10 @@ import { AccountComponent } from './account/account.component';
 import { AccountFormComponent } from './account/account-form/account-form.component';
 import { AccountMainComponent } from './account/account-main/account-main.component';
 import { AccountTableComponent } from './account/account-table/account-table.component';
+import { SubmissionComponent } from './submission/submission.component';
+import { SubmissionFormComponent } from './submission/submission-form/submission-form.component';
+import { SubmissionMainComponent } from './submission/submission-main/submission-main.component';
+import { SubmissionTableComponent } from './submission/submission-table/submission-table.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +68,11 @@ import { AccountTableComponent } from './account/account-table/account-table.com
     AccountComponent,
     AccountFormComponent,
     AccountMainComponent,
-    AccountTableComponent
+    AccountTableComponent,
+    SubmissionComponent,
+    SubmissionFormComponent,
+    SubmissionMainComponent,
+    SubmissionTableComponent
   ],
   imports: [
     BrowserModule,
