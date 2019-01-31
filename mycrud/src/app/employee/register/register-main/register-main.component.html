@@ -3,9 +3,8 @@
     <app-register-form (updatedEmployee)="handleUpdatedEmployee($event)"></app-register-form>
   </mat-tab>
   <mat-tab label="Employee Table">
-    <app-register-table [displayEmployee]="employee"></app-register-table>
+    <!-- <app-register-table [displayEmployee]="employee"></app-register-table> -->
+    <app-submission></app-submission>
   </mat-tab>
 </mat-tab-group>
-<div>
-  {{ employee | json}}
-</div>
+<div>{{ employee | json}}</div>
