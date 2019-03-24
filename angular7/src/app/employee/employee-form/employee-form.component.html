@@ -1,24 +1,57 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <label for="firstName">First Name</label>
+<form
+  [formGroup]="employeeForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="firstName">First Name</label>
+      </div>
+      <div class="col-md-8">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="First name"
+          formControlName="firstName"
+        >
+      </div>
     </div>
-    <div class="col-md-8">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Username"
-        aria-label="Username"
-        aria-describedby="basic-addon1"
-      >
+    <div class="row">
+      <div class="col-md-4">
+        <label for="lastName">Last Name</label>
+      </div>
+      <div class="col-md-8">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Last name"
+          formControlName="lastName"
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-md-8">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          formControlName="email"
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <button
-      class="btn btn-primary"
-      type="submit"
-    >
-      Submit
-    </button>
-  </div>
-</div>
+</form>
