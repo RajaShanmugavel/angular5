@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Employee } from 'src/app/employee';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-employee-form',
@@ -8,9 +9,11 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./employee-form.component.css']
 })
 export class EmployeeFormComponent implements OnInit {
-
   employeeForm: FormGroup;
   employee: Employee = new Employee();
+
+  @Output()
+  submittedEmployee = new EventEmitter<Employee>();
 
   constructor(private fb: FormBuilder) {}
 
@@ -30,5 +33,6 @@ export class EmployeeFormComponent implements OnInit {
   onSubmit() {
     const val = this.employeeForm.value;
     console.log('value submitted:' + val);
+    this.submittedEmployee.emit(val);
   }
 }
