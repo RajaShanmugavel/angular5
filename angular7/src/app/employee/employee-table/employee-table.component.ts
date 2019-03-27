@@ -8,7 +8,7 @@ import { Employee } from 'src/app/employee';
 })
 export class EmployeeTableComponent implements OnInit {
   @Input()
-  retrievedEmployee: Employee;
+  listOfEmployees: Employee[];
 
   constructor() {}
 

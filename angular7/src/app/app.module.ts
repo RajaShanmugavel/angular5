@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
@@ -16,7 +17,11 @@ import { EmployeeFormComponent } from './employee/employee-form/employee-form.co
     EmployeeTableComponent,
     EmployeeFormComponent
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

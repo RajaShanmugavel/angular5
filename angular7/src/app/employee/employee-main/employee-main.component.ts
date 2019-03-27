@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from 'src/app/employee';
+import { EmployeeService } from 'src/app/employee.service';
 
 @Component({
   selector: 'app-employee-main',
@@ -7,16 +8,26 @@ import { Employee } from 'src/app/employee';
   styleUrls: ['./employee-main.component.css']
 })
 export class EmployeeMainComponent implements OnInit {
-
   employee: Employee;
 
-  constructor() { }
+  employeesList: Employee[] = [];
+
+  constructor(private employeeService: EmployeeService) {}
 
   ngOnInit() {
+    this.getEmployees();
   }
 
   handleSubmittedEmployee(employee: Employee) {
     this.employee = employee;
+    this.employeeService.saveEmployee(employee).subscribe(res => {
+      this.getEmployees();
+    });
   }
 
+  getEmployees() {
+    this.employeeService.getEmployees().subscribe(result => {
+      this.employeesList = result;
+    });
+  }
 }
