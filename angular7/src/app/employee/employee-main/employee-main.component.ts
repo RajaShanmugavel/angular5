@@ -18,6 +18,10 @@ export class EmployeeMainComponent implements OnInit {
     this.getEmployees();
   }
 
+  /**
+   *
+   * @param employee
+   */
   handleSubmittedEmployee(employee: Employee) {
     this.employee = employee;
     this.employeeService.saveEmployee(employee).subscribe(res => {
@@ -25,6 +29,9 @@ export class EmployeeMainComponent implements OnInit {
     });
   }
 
+  /**
+   *
+   */
   getEmployees() {
     this.employeeService.getEmployees().subscribe(result => {
       this.employeesList = result;
