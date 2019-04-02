@@ -1,0 +1,24 @@
+<div>{{ searchList | json }}</div>
+<div>
+  <p-table [value]="searchList">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Created At</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>URL</th>
+      </tr>
+    </ng-template>
+    <ng-template
+      pTemplate="body"
+      let-src
+    >
+      <tr>
+        <td>{{src.created_at}}</td>
+        <td>{{src.title}}</td>
+        <td>{{src.author}}</td>
+        <td>{{src.url}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

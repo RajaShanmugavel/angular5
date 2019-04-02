@@ -1,0 +1,20 @@
+<div [formGroup]="searchForm">
+  <div class="container">
+
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Search News</span>
+        </div>
+        <textarea
+          formControlName="searchQuery"
+          class="form-control"
+          aria-label="With textarea"
+          (input)="onSubmit($event)"
+        ></textarea>
+      </div>
+    </div>
+
+  </div>
+
+</div>
