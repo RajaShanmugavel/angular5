@@ -16,10 +16,9 @@ export class SearchMainComponent implements OnInit {
   ngOnInit() {}
 
   handleSubmittedSearchQuery(search: Search) {
-    debugger;
     this.searchService.getResults(search.searchQuery).subscribe(
-      result => {
-        this.searchResult = result;
+      res => {
+          this.searchResult = JSON.parse(JSON.stringify(res))['hits'];
       },
       err => {
         console.log('error:' + err);

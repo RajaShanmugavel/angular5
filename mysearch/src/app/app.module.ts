@@ -3,7 +3,14 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AccordionModule } from 'primeng/accordion';
+import { CalendarModule } from 'primeng/calendar';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
+import { MultiSelectModule } from 'primeng/multiselect';
 
 import { AppComponent } from './app.component';
 import { SearchMainComponent } from './search-main/search-main.component';
@@ -22,7 +29,14 @@ import { SearchTableComponent } from './search-table/search-table.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AccordionModule
+    CalendarModule,
+    RadioButtonModule,
+    DropdownModule,
+    InputTextModule,
+    ButtonModule,
+    TableModule,
+    DialogModule,
+    MultiSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,8 +11,7 @@ export class SearchService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getResults(query: string): Observable<Result[]> {
-    debugger
-    return this.httpClient.get<Result[]>(this.REST_URL + 'query');
+  getResults(query: string): Observable<any[]> {
+    return this.httpClient.get<any[]>(this.REST_URL + query);
   }
 }

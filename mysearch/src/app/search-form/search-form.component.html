@@ -1,17 +1,23 @@
 <div [formGroup]="searchForm">
   <div class="container">
 
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Search News</span>
+    <div align="center">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-search">&nbsp; NEWS</i>
+              </span>
+            </div>
+            <textarea
+              formControlName="searchQuery"
+              class="form-control"
+              aria-label="With textarea"
+              (input)="onSubmit($event)"
+            ></textarea>
+          </div>
         </div>
-        <textarea
-          formControlName="searchQuery"
-          class="form-control"
-          aria-label="With textarea"
-          (input)="onSubmit($event)"
-        ></textarea>
       </div>
     </div>
 

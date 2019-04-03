@@ -1,0 +1,743 @@
+{
+  "hits": [
+    {
+      "created_at": "2016-06-21T07:16:20.000Z",
+      "title": "“PayPal has demanded that we monitor data traffic as well as customers’ files”",
+      "url": "https://seafile.de/en/important-infos-about-app-seafile-de-and-licensing-purchases-through-our-web-shops/",
+      "author": "zolder",
+      "points": 1030,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 340,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1466493380,
+      "relevancy_score": 6802,
+      "_tags": ["story", "author_zolder", "story_11944011"],
+      "objectID": "11944011",
+      "_highlightResult": {
+        "title": {
+          "value": "“\u003cem\u003ePayPal\u003c/em\u003e has demanded that we monitor data traffic as well as customers’ files”",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "https://seafile.de/en/important-infos-about-app-seafile-de-and-licensing-purchases-through-our-web-shops/",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "zolder",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-01-03T23:47:14.000Z",
+      "title": "PayPal forces buyer to destroy $2500 pre-WWII antique violin in dispute",
+      "url": "http://www.regretsy.com/2012/01/03/from-the-mailbag-27/",
+      "author": "tfe",
+      "points": 988,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 290,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1325634434,
+      "relevancy_score": 3670,
+      "_tags": ["story", "author_tfe", "story_3421882"],
+      "objectID": "3421882",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e forces buyer to destroy $2500 pre-WWII antique violin in dispute",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.regretsy.com/2012/01/03/from-the-mailbag-27/",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": { "value": "tfe", "matchLevel": "none", "matchedWords": [] },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2012-12-03T20:03:42.000Z",
+      "title": "Thinking of Selling on eBay using Paypal? Think Again",
+      "url": "http://codenerdz.com/blog/2012/12/03/think-of-selling-on-ebay-using-paypal-think-again/",
+      "author": "codenerdz",
+      "points": 970,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 393,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1354565022,
+      "relevancy_score": 4315,
+      "_tags": ["story", "author_codenerdz", "story_4867484"],
+      "objectID": "4867484",
+      "_highlightResult": {
+        "title": {
+          "value": "Thinking of Selling on eBay using \u003cem\u003ePaypal\u003c/em\u003e? Think Again",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://codenerdz.com/blog/2012/12/03/think-of-selling-on-ebay-using-\u003cem\u003epaypal\u003c/em\u003e-think-again/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "codenerdz",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2011-12-06T04:19:34.000Z",
+      "title": "More Paypal nonsense",
+      "url": "http://www.regretsy.com/2011/12/05/cats-1-kids-0/",
+      "author": "bradleyjoyce",
+      "points": 858,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 252,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1323145174,
+      "relevancy_score": 3616,
+      "_tags": ["story", "author_bradleyjoyce", "story_3317856"],
+      "objectID": "3317856",
+      "_highlightResult": {
+        "title": {
+          "value": "More \u003cem\u003ePaypal\u003c/em\u003e nonsense",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.regretsy.com/2011/12/05/cats-1-kids-0/",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "bradleyjoyce",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2017-04-29T14:40:33.000Z",
+      "title": "If you opened your PayPal account before you were 18, close it",
+      "url": "https://medium.com/@iDemonix/paypal-is-still-one-of-the-worst-online-examples-of-customer-service-42f3c13f6cd0",
+      "author": "iDemonix",
+      "points": 762,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 378,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1493476833,
+      "relevancy_score": 7393,
+      "_tags": ["story", "author_iDemonix", "story_14226775"],
+      "objectID": "14226775",
+      "_highlightResult": {
+        "title": {
+          "value": "If you opened your \u003cem\u003ePayPal\u003c/em\u003e account before you were 18, close it",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "https://medium.com/@iDemonix/\u003cem\u003epaypal\u003c/em\u003e-is-still-one-of-the-worst-online-examples-of-customer-service-42f3c13f6cd0",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "iDemonix",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-09-06T11:41:56.000Z",
+      "title": "Good riddance, PayPal",
+      "url": "http://elliotjaystocks.com/blog/good-riddance-paypal/",
+      "author": "jenskanis",
+      "points": 699,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 267,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1346931716,
+      "relevancy_score": 4141,
+      "_tags": ["story", "author_jenskanis", "story_4483710"],
+      "objectID": "4483710",
+      "_highlightResult": {
+        "title": {
+          "value": "Good riddance, \u003cem\u003ePayPal\u003c/em\u003e",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://elliotjaystocks.com/blog/good-riddance-\u003cem\u003epaypal\u003c/em\u003e/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "jenskanis",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2015-06-18T14:33:43.000Z",
+      "title": "Stripe Is the New PayPal",
+      "url": null,
+      "author": "disappointeddev",
+      "points": 679,
+      "story_text": "Dear HN,\u003cp\u003eI am only writing this post because Stripe are not responding to my emails.\u003cp\u003eI started using Stripe last month and everything was going smoothly. However, this week they sent me an email saying:\u003cp\u003e\u0026quot;Stripe provides a service between banks and our users. In order to provide service to our users, we are urged by our banking partners to keep an eye on all accounts that sign up for our services. We\u0026#x27;ve noticed that you have processed charges that seem to be unauthorized--in order to make charges with credit and debit cards, the owner of the card must consent to the charge. Charges on your account do seem to lack this consent, which unfortunately means that we will no longer be able to offer service\u0026quot;\u003cp\u003eThis makes no sense as I have had hundreds of payments and not a single payment has been disputed. So how could it be true that the payments are unauthorised? I have sent Stripe emails explaining this and they will not respond.\u003cp\u003eI am very disappointed. As a member of this community I assumed Stripe would treat developers making a living online with a little more respect. I plan to write a lengthy blog post explaining this in more depth.\u003cp\u003e\u003ci\u003eUpdate: I am currently in contact with Stripe CEO over email. He is dealing with the issue. I will keep everyone updated.\u003c/i\u003e",
+      "comment_text": null,
+      "num_comments": 303,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1434638023,
+      "relevancy_score": 6089,
+      "_tags": ["story", "author_disappointeddev", "story_9738717"],
+      "objectID": "9738717",
+      "_highlightResult": {
+        "title": {
+          "value": "Stripe Is the New \u003cem\u003ePayPal\u003c/em\u003e",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "disappointeddev",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "Dear HN,\u003cp\u003eI am only writing this post because Stripe are not responding to my emails.\u003cp\u003eI started using Stripe last month and everything was going smoothly. However, this week they sent me an email saying:\u003cp\u003e\u0026quot;Stripe provides a service between banks and our users. In order to provide service to our users, we are urged by our banking partners to keep an eye on all accounts that sign up for our services. We've noticed that you have processed charges that seem to be unauthorized--in order to make charges with credit and debit cards, the owner of the card must consent to the charge. Charges on your account do seem to lack this consent, which unfortunately means that we will no longer be able to offer service\u0026quot;\u003cp\u003eThis makes no sense as I have had hundreds of payments and not a single payment has been disputed. So how could it be true that the payments are unauthorised? I have sent Stripe emails explaining this and they will not respond.\u003cp\u003eI am very disappointed. As a member of this community I assumed Stripe would treat developers making a living online with a little more respect. I plan to write a lengthy blog post explaining this in more depth.\u003cp\u003e\u003ci\u003eUpdate: I am currently in contact with Stripe CEO over email. He is dealing with the issue. I will keep everyone updated.\u003c/i\u003e",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-09-08T21:06:27.000Z",
+      "title": "PayPal CEO writes personal response",
+      "url": "http://ndy.gd/JJgB",
+      "author": "Peteris",
+      "points": 606,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 160,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1347138387,
+      "relevancy_score": 4141,
+      "_tags": ["story", "author_Peteris", "story_4493984"],
+      "objectID": "4493984",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e CEO writes personal response",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://ndy.gd/JJgB",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "Peteris",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2010-10-26T16:57:04.000Z",
+      "title": "WePay Drops 600lbs of ice in front of PayPal Conference",
+      "url": "http://techcrunch.com/2010/10/26/wepay-ice-paypal/",
+      "author": "sophmonroe",
+      "points": 605,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 160,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1288112224,
+      "relevancy_score": 2837,
+      "_tags": ["story", "author_sophmonroe", "story_1834976"],
+      "objectID": "1834976",
+      "_highlightResult": {
+        "title": {
+          "value": "WePay Drops 600lbs of ice in front of \u003cem\u003ePayPal\u003c/em\u003e Conference",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://techcrunch.com/2010/10/26/wepay-ice-\u003cem\u003epaypal\u003c/em\u003e/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "sophmonroe",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2016-10-23T05:52:54.000Z",
+      "title": "PayPal 2FA Bypass",
+      "url": "https://henryhoggard.co.uk/blog/Paypal-2FA-Bypass",
+      "author": "Spydar007",
+      "points": 525,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 137,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1477201974,
+      "relevancy_score": 7030,
+      "_tags": ["story", "author_Spydar007", "story_12772181"],
+      "objectID": "12772181",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e 2FA Bypass",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "https://henryhoggard.co.uk/blog/\u003cem\u003ePaypal\u003c/em\u003e-2FA-Bypass",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "Spydar007",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2013-09-05T10:20:21.000Z",
+      "title": "PayPal Freezes Mailpile Campaign Funds",
+      "url": "http://www.mailpile.is/blog/2013-09-05_PayPal_Freezes_Campaign_Funds.html",
+      "author": "capgre",
+      "points": 507,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 351,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1378376421,
+      "relevancy_score": 4839,
+      "_tags": ["story", "author_capgre", "story_6333203"],
+      "objectID": "6333203",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e Freezes Mailpile Campaign Funds",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.mailpile.is/blog/2013-09-05_\u003cem\u003ePayPal\u003c/em\u003e_Freezes_Campaign_Funds.html",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "capgre",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2016-02-08T23:13:43.000Z",
+      "title": "PayPal CTO Resigns",
+      "url": "http://www.sec.gov/Archives/edgar/data/1633917/000163391716000110/a8-kbarrese.htm",
+      "author": "coloneltcb",
+      "points": 504,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 119,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1454973223,
+      "relevancy_score": 6546,
+      "_tags": ["story", "author_coloneltcb", "story_11061689"],
+      "objectID": "11061689",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e CTO Resigns",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.sec.gov/Archives/edgar/data/1633917/000163391716000110/a8-kbarrese.htm",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "coloneltcb",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2012-03-12T20:26:45.000Z",
+      "title": "Paypal Does it Again",
+      "url": "http://www.regretsy.com/2012/03/12/paypal-does-it-again/",
+      "author": "cwan",
+      "points": 478,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 149,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1331584005,
+      "relevancy_score": 3805,
+      "_tags": ["story", "author_cwan", "story_3695306"],
+      "objectID": "3695306",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePaypal\u003c/em\u003e Does it Again",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.regretsy.com/2012/03/12/\u003cem\u003epaypal\u003c/em\u003e-does-it-again/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": { "value": "cwan", "matchLevel": "none", "matchedWords": [] },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2013-02-09T01:36:34.000Z",
+      "title": "I made $200K and PayPal locked my account",
+      "url": "",
+      "author": "blasten",
+      "points": 464,
+      "story_text": "I'm the creator of turn.js (www.turnjs.com), a javascript library for books and magazines. I released a commercial version in July 2012 and six month later I made $200K. I dont know how, but I made it.\u003cp\u003ePayPal has closed my account because I dont have a social security number. It seems like I dont qualify for one because Im just an international student from Venezuela.\u003cp\u003eI have been working really hard to release a product for publishers that converts PDFs to HTML5 for books and magazine with the brand-new turn.js 5th release.\u003cp\u003eI dont know what to do or where to go. I don't have more money.\u003cp\u003ePlease help.\u003cp\u003eAny suggestion would be appreciated.\u003cp\u003eblasten@gmail.com\u003cp\u003eEmmanuel",
+      "comment_text": null,
+      "num_comments": 283,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1360373794,
+      "relevancy_score": 4436,
+      "_tags": ["story", "author_blasten", "story_5191142"],
+      "objectID": "5191142",
+      "_highlightResult": {
+        "title": {
+          "value": "I made $200K and \u003cem\u003ePayPal\u003c/em\u003e locked my account",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": { "value": "", "matchLevel": "none", "matchedWords": [] },
+        "author": {
+          "value": "blasten",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": {
+          "value": "I'm the creator of turn.js (www.turnjs.com), a javascript library for books and magazines. I released a commercial version in July 2012 and six month later I made $200K. I dont know how, but I made it.\u003cp\u003e\u003cem\u003ePayPal\u003c/em\u003e has closed my account because I dont have a social security number. It seems like I dont qualify for one because Im just an international student from Venezuela.\u003cp\u003eI have been working really hard to release a product for publishers that converts PDFs to HTML5 for books and magazine with the brand-new turn.js 5th release.\u003cp\u003eI dont know what to do or where to go. I don't have more money.\u003cp\u003ePlease help.\u003cp\u003eAny suggestion would be appreciated.\u003cp\u003eblasten@gmail.com\u003cp\u003eEmmanuel",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        }
+      }
+    },
+    {
+      "created_at": "2010-09-10T12:10:04.000Z",
+      "title": "Paypal is holding over 600,000 euros from the minecraft developer",
+      "url": "http://notch.tumblr.com/post/1096322756/working-on-a-friday-update-crying-over-paypal",
+      "author": "xelfer",
+      "points": 418,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 158,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1284120604,
+      "relevancy_score": 2743,
+      "_tags": ["story", "author_xelfer", "story_1678582"],
+      "objectID": "1678582",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePaypal\u003c/em\u003e is holding over 600,000 euros from the minecraft developer",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://notch.tumblr.com/post/1096322756/working-on-a-friday-update-crying-over-\u003cem\u003epaypal\u003c/em\u003e",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "xelfer",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2017-03-12T15:38:15.000Z",
+      "title": "Paypal Horror Story 40k Frozen No Answers",
+      "url": null,
+      "author": "sabslaurent",
+      "points": 404,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 243,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1489333095,
+      "relevancy_score": 7299,
+      "_tags": ["story", "author_sabslaurent", "story_13851120"],
+      "objectID": "13851120",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePaypal\u003c/em\u003e Horror Story 40k Frozen No Answers",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "sabslaurent",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2009-03-26T18:05:54.000Z",
+      "title": "Google is Evil, Worse than PayPal: Don't use Google Checkout for your business",
+      "url": "http://www.slash7.com/articles/2009/3/26/google-is-evil-worse-than-paypal-don-t-use-google-checkout-for-your-business",
+      "author": "ahoyhere",
+      "points": 400,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 150,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1238090754,
+      "relevancy_score": 1721,
+      "_tags": ["story", "author_ahoyhere", "story_533849"],
+      "objectID": "533849",
+      "_highlightResult": {
+        "title": {
+          "value": "Google is Evil, Worse than \u003cem\u003ePayPal\u003c/em\u003e: Don't use Google Checkout for your business",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.slash7.com/articles/2009/3/26/google-is-evil-worse-than-\u003cem\u003epaypal\u003c/em\u003e-don-t-use-google-checkout-for-your-business",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "ahoyhere",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    },
+    {
+      "created_at": "2015-05-20T14:11:04.000Z",
+      "title": "PayPal penalised for 'deceptive' practices",
+      "url": "http://www.bbc.com/news/technology-32810280",
+      "author": "uladzislau",
+      "points": 380,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 216,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1432131064,
+      "relevancy_score": 6036,
+      "_tags": ["story", "author_uladzislau", "story_9576396"],
+      "objectID": "9576396",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e penalised for 'deceptive' practices",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.bbc.com/news/technology-32810280",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "author": {
+          "value": "uladzislau",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2010-10-18T09:30:03.000Z",
+      "title": "PayPal robbed my bank account",
+      "url": "http://www.jacquesmattheij.com/PayPal+robbed+my+bank+account",
+      "author": "jacquesm",
+      "points": 378,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 185,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1287394203,
+      "relevancy_score": 2823,
+      "_tags": ["story", "author_jacquesm", "story_1802801"],
+      "objectID": "1802801",
+      "_highlightResult": {
+        "title": {
+          "value": "\u003cem\u003ePayPal\u003c/em\u003e robbed my bank account",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://www.jacquesmattheij.com/\u003cem\u003ePayPal\u003c/em\u003e+robbed+my+bank+account",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "jacquesm",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2011-12-08T22:52:38.000Z",
+      "title": "Why we ditched PayPal for Stripe",
+      "url": "http://gc-taylor.com/blog/2011/12/8/why-we-ditched-paypal-stripe/",
+      "author": "gtaylor",
+      "points": 377,
+      "story_text": "",
+      "comment_text": null,
+      "num_comments": 119,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1323384758,
+      "relevancy_score": 3616,
+      "_tags": ["story", "author_gtaylor", "story_3331556"],
+      "objectID": "3331556",
+      "_highlightResult": {
+        "title": {
+          "value": "Why we ditched \u003cem\u003ePayPal\u003c/em\u003e for Stripe",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "url": {
+          "value": "http://gc-taylor.com/blog/2011/12/8/why-we-ditched-\u003cem\u003epaypal\u003c/em\u003e-stripe/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": ["paypal"]
+        },
+        "author": {
+          "value": "gtaylor",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_text": { "value": "", "matchLevel": "none", "matchedWords": [] }
+      }
+    }
+  ],
+  "nbHits": 24538,
+  "page": 0,
+  "nbPages": 50,
+  "hitsPerPage": 20,
+  "processingTimeMS": 3,
+  "exhaustiveNbHits": false,
+  "query": "paypal",
+  "params": "advancedSyntax=true\u0026analytics=false\u0026query=paypal"
+}
