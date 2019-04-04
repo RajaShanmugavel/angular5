@@ -15,6 +15,9 @@ export class SearchMainComponent implements OnInit {
 
   ngOnInit() {}
 
+  /**
+   *
+   */
   handleSubmittedSearchQuery(search: Search) {
     this.searchService.getResults(search.searchQuery).subscribe(
       res => {
