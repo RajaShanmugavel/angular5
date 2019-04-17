@@ -16,6 +16,25 @@ export class EmployeeService {
   }
 
   saveEmployee(employee: Employee): Observable<Employee> {
-    return this.httpClient.put<Employee>(this.APP_URL + '/save', employee);
+    if (employee.id) { // update existing
+      employee = {
+        ...employee,
+        id: employee.id,
+        name: employee.name,
+        joiningDate: employee.joiningDate,
+        salary: employee.salary,
+        ssn: employee.ssn
+      };
+      return this.httpClient.put<Employee>(this.APP_URL + '/save', employee);
+    } else { // save new
+      employee = {
+        ...employee,
+        name: employee.name,
+        joiningDate: employee.joiningDate,
+        salary: employee.salary,
+        ssn: employee.ssn
+      };
+      return this.httpClient.post<Employee>(this.APP_URL + '/', employee);
+    }
   }
 }
