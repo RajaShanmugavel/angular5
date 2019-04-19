@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Employee } from './employee';
 import { HttpClient } from '@angular/common/http';
+import { debug } from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +35,7 @@ export class EmployeeService {
         salary: employee.salary,
         ssn: employee.ssn
       };
-      return this.httpClient.post<Employee>(this.APP_URL + '/', employee);
+      return this.httpClient.post<Employee>(this.APP_URL + '/save', employee);
     }
   }
 }

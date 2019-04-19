@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from 'src/app/employee';
 import { EmployeeService } from 'src/app/employee.service';
+import { debug } from 'util';
 
 @Component({
   selector: 'app-employee-main',
