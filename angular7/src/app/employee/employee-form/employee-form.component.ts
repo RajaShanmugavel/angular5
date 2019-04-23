@@ -23,7 +23,6 @@ export class EmployeeFormComponent implements OnInit {
 
   createForm() {
     this.employeeForm = this.fb.group({
-      id: null,
       name: null,
       joiningDate: null,
       salary: null,
