@@ -21,7 +21,7 @@ export class EmployeeMainComponent implements OnInit {
 
   /**
    *
-   * @param employee
+   * get the populated employee and pass on to saveEmployee call via service
    */
   handleSubmittedEmployee(employee: Employee) {
     this.employee = employee;
