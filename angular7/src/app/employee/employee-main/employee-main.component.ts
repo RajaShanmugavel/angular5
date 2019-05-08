@@ -28,10 +28,11 @@ export class EmployeeMainComponent implements OnInit {
     this.employeeService.saveEmployee(employee).subscribe(res => {
       this.getEmployees();
     });
-  }
+  }0
 
   /**
    *
+   * get employees
    */
   getEmployees() {
     this.employeeService.getEmployees().subscribe(result => {
