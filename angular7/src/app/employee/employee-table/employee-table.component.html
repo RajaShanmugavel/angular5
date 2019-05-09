@@ -1,4 +1,23 @@
 <p>
-  list of Employee:
-  {{ listOfEmployees | json}}
+  <p-table [value]="listOfEmployees">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Name</th>
+        <th>Joining Date</th>
+        <th>Salary</th>
+        <th>SSN</th>
+      </tr>
+    </ng-template>
+    <ng-template
+      pTemplate="body"
+      let-emp
+    >
+      <tr>
+        <td>{{emp.name}}</td>
+        <td>{{emp.joiningDate}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.ssn}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
 </p>

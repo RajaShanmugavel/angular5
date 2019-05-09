@@ -31,7 +31,8 @@ import { EmployeeFormComponent } from './employee/employee-form/employee-form.co
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CalendarModule
+    CalendarModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
