@@ -13,4 +13,8 @@ export class EmployeeTableComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  onRowSelect(employee: Employee) {
+    console.log('selected employee:' + employee.name);
+  }
 }
