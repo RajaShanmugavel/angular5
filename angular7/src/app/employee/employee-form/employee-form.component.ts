@@ -34,5 +34,6 @@ export class EmployeeFormComponent implements OnInit {
     const val = this.employeeForm.value;
     console.log('value submitted:' + val);
     this.submittedEmployee.emit(val);
+    this.employeeForm.reset();
   }
 }
