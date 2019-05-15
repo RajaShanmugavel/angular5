@@ -1,5 +1,5 @@
 <p>
-  <p-table [value]="listOfEmployees" selectionMode="single" (onRowSelect)="onRowSelect($event)">
+  <p-table [value]="listOfEmployees" [rowHover]="true" selectionMode="single" (onRowSelect)="onRowSelect($event.data)">
     <ng-template pTemplate="header">
       <tr>
         <th>Name</th>
