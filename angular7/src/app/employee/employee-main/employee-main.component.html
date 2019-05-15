@@ -1,4 +1,4 @@
 <div>
-  <app-employee-form (submittedEmployee)="handleSubmittedEmployee($event)"></app-employee-form>
-  <app-employee-table [listOfEmployees]="employeesList"></app-employee-table>
+  <app-employee-form (submittedEmployee)="handleSubmittedEmployee($event)" [selectedEmployee]=selectedEmployee></app-employee-form>
+  <app-employee-table [listOfEmployees]="employeesList" (clickedEmployee)="handleClickedEmployee($event)"></app-employee-table>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Employee } from 'src/app/employee';
 
 @Component({
@@ -10,11 +10,15 @@ export class EmployeeTableComponent implements OnInit {
   @Input()
   listOfEmployees: Employee[];
 
+  @Output()
+  clickedEmployee = new EventEmitter<Employee>();
+
   constructor() {}
 
   ngOnInit() {}
 
   onRowSelect(employee: Employee) {
-    console.log('selected employee:' + employee.name);
+    this.clickedEmployee.emit(employee);
+    // console.log('selected employee:' + employee.name);
   }
 }

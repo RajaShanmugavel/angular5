@@ -11,6 +11,8 @@ import { debug } from 'util';
 export class EmployeeMainComponent implements OnInit {
   employee: Employee;
 
+  selectedEmployee: Employee;
+
   employeesList: Employee[] = [];
 
   constructor(private employeeService: EmployeeService) {}
@@ -28,7 +30,17 @@ export class EmployeeMainComponent implements OnInit {
     this.employeeService.saveEmployee(employee).subscribe(res => {
       this.getEmployees();
     });
-  }0
+  }
+
+  /**
+   *
+   * @param employee
+   */
+  handleClickedEmployee(employee: Employee) {
+    if (this.selectedEmployee) {
+      this.selectedEmployee = employee;
+    }
+  }
 
   /**
    *

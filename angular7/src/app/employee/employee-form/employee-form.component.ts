@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input, OnChanges } from '@angular/core';
 import { Employee } from 'src/app/employee';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { EventEmitter } from '@angular/core';
@@ -8,9 +8,12 @@ import { EventEmitter } from '@angular/core';
   templateUrl: './employee-form.component.html',
   styleUrls: ['./employee-form.component.css']
 })
-export class EmployeeFormComponent implements OnInit {
+export class EmployeeFormComponent implements OnInit, OnChanges {
   employeeForm: FormGroup;
   employee: Employee = new Employee();
+
+  @Input()
+  selectedEmployee: Employee;
 
   @Output()
   submittedEmployee = new EventEmitter<Employee>();
@@ -19,6 +22,10 @@ export class EmployeeFormComponent implements OnInit {
 
   ngOnInit() {
     this.createForm();
+  }
+
+  ngOnChanges() {
+    console.log(this.selectedEmployee.name);
   }
 
   createForm() {
