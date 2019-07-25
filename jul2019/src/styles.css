@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+The below theme is required for Angular Material components to work and display correctly. There are 4 themes available.
+*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';

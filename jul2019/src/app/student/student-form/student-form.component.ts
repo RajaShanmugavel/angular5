@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { State } from './state';
 
 @Component({
   selector: 'app-student-form',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-form.component.css']
 })
 export class StudentFormComponent implements OnInit {
+  states: State[] = [
+    { value: 'NSW', viewValue: 'New South Wales' },
+    { value: 'VIC', viewValue: 'Victoria' },
+    { value: 'QLD', viewValue: 'Queensland' }
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
