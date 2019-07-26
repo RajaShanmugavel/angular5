@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { State } from './state';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-student-form',
@@ -13,7 +14,17 @@ export class StudentFormComponent implements OnInit {
     { value: 'QLD', viewValue: 'Queensland' }
   ];
 
-  constructor() {}
+  studentForm: FormGroup;
 
-  ngOnInit() {}
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit() {
+    this.createForm();
+  }
+
+  createForm() {
+    this.studentForm = this.fb.group({
+
+    });
+  }
 }
