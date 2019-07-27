@@ -24,7 +24,11 @@ export class StudentFormComponent implements OnInit {
 
   createForm() {
     this.studentForm = this.fb.group({
-
+        id: null,
+        firstName: null,
+        lastName: null,
+        email: null,
+        state: null
     });
   }
 }
