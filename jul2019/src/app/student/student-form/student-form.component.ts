@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { State } from './state';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Student } from '../student';
 
 @Component({
   selector: 'app-student-form',
@@ -15,6 +16,7 @@ export class StudentFormComponent implements OnInit {
   ];
 
   studentForm: FormGroup;
+  student: Student;
 
   constructor(private fb: FormBuilder) {}
 
@@ -24,11 +26,16 @@ export class StudentFormComponent implements OnInit {
 
   createForm() {
     this.studentForm = this.fb.group({
-        id: null,
-        firstName: null,
-        lastName: null,
-        email: null,
-        state: null
+      id: null,
+      firstName: null,
+      lastName: null,
+      email: null,
+      state: null
     });
+  }
+
+  onSubmit() {
+    this.student = this.studentForm.value;
+    console.log('student.name' + this.student.firstName);
   }
 }

@@ -1,4 +1,4 @@
-<form [formGroup]="studentForm">
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
 <div class="container">
   <div class="row">
     <div class="col-md-8">
@@ -15,6 +15,7 @@
           type="text"
           class="form-control"
           aria-label="Default"
+          formControlName="firstName"
           aria-describedby="inputGroup-sizing-default"
         >
       </div>
@@ -35,6 +36,7 @@
           type="text"
           class="form-control"
           aria-label="Default"
+          formControlName="lastName"
           aria-describedby="inputGroup-sizing-default"
         >
       </div>
@@ -55,6 +57,7 @@
           type="email"
           class="form-control"
           aria-label="Default"
+          formControlName="email"
           aria-describedby="inputGroup-sizing-default"
         >
       </div>
@@ -78,7 +81,7 @@
   <div class="row">
     <div class="col-md-8">
       <button
-        type="button"
+        type="submit"
         class="btn btn-primary"
       >
         Submit
