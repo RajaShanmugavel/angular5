@@ -36,6 +36,7 @@ export class StudentFormComponent implements OnInit {
 
   onSubmit() {
     this.student = this.studentForm.value;
-    console.log('student.name' + this.student.firstName);
+    console.log('student.name:' + this.student.firstName);
+    console.log('student.state:' + this.student.state);
   }
 }
