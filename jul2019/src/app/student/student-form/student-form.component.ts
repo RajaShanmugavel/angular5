@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { State } from './state';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Student } from '../student';
@@ -18,6 +18,9 @@ export class StudentFormComponent implements OnInit {
   studentForm: FormGroup;
   student: Student;
 
+  @Output()
+  submittedStudent = new EventEmitter<Student>();
+
   constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
@@ -35,7 +38,8 @@ export class StudentFormComponent implements OnInit {
   }
 
   onSubmit() {
-    this.student = this.studentForm.value;
+    const val = this.studentForm.value;
+    this.submittedStudent.emit(val);
     console.log('student.name:' + this.student.firstName);
     console.log('student.state:' + this.student.state);
   }
