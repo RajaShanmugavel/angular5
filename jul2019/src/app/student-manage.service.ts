@@ -11,7 +11,7 @@ export class StudentManageService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getEmployees(): Observable<Student[]> {
-    return this.httpClient.get<Student[]>(this.APP_URL + '/all');
+  getStudents(): Observable<Student[]> {
+    return this.httpClient.get<Student[]>(this.APP_URL);
   }
 }

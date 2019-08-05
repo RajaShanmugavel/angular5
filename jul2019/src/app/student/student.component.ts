@@ -22,7 +22,7 @@ export class StudentComponent implements OnInit {
   }
 
   getAllStudents() {
-    this.studentService.getEmployees().subscribe(res => {
+    this.studentService.getStudents().subscribe(res => {
       this.students = res;
     });
   }
