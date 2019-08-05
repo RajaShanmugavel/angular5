@@ -9,7 +9,7 @@ import { Student } from '../student';
 export class StudentTableComponent implements OnInit {
 
   @Input()
-  receivedStudent: Student;
+  receivedStudents: Student[];
 
   constructor() { }
 

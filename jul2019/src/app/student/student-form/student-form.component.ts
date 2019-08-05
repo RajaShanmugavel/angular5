@@ -16,7 +16,7 @@ export class StudentFormComponent implements OnInit {
   ];
 
   studentForm: FormGroup;
-  student: Student;
+  students: Student[];
 
   @Output()
   submittedStudent = new EventEmitter<Student>();
@@ -40,7 +40,5 @@ export class StudentFormComponent implements OnInit {
   onSubmit() {
     const val = this.studentForm.value;
     this.submittedStudent.emit(val);
-    console.log('student.name:' + this.student.firstName);
-    console.log('student.state:' + this.student.state);
   }
 }
