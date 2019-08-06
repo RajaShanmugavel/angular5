@@ -18,7 +18,9 @@ export class StudentComponent implements OnInit {
   }
 
   handleSubmittedStudent(student: Student) {
-    this.student = student;
+    this.studentService.saveStudent(student).subscribe(res => {
+      this.getAllStudents();
+    });
   }
 
   getAllStudents() {

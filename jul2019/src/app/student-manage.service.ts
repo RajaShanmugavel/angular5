@@ -14,4 +14,16 @@ export class StudentManageService {
   getStudents(): Observable<Student[]> {
     return this.httpClient.get<Student[]>(this.APP_URL);
   }
+
+  saveStudent(student: Student): Observable<Student> {
+    // save new student
+    student = {
+      ...student,
+      firstName: student.firstName,
+      lastName: student.lastName,
+      email: student.email,
+      state: student.state
+    };
+    return this.httpClient.post<Student>(this.APP_URL, student);
+  }
 }
