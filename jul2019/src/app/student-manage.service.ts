@@ -17,6 +17,7 @@ export class StudentManageService {
 
   saveStudent(student: Student): Observable<Student> {
     // save new student
+    debugger;
     student = {
       ...student,
       firstName: student.firstName,
