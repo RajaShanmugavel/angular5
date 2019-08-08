@@ -16,15 +16,23 @@ export class StudentManageService {
   }
 
   saveStudent(student: Student): Observable<Student> {
-    // save new student
     debugger;
-    student = {
-      ...student,
-      firstName: student.firstName,
-      lastName: student.lastName,
-      email: student.email,
-      state: student.state
-    };
-    return this.httpClient.post<Student>(this.APP_URL, student);
+    if (student.id) {
+      // update existing student
+      return this.httpClient.put<Student>(
+        this.APP_URL + '/' + student.id,
+        student
+      );
+    } else {
+      // save new student
+      student = {
+        ...student,
+        firstName: student.firstName,
+        lastName: student.lastName,
+        email: student.email,
+        state: student.state
+      };
+      return this.httpClient.post<Student>(this.APP_URL, student);
+    }
   }
 }

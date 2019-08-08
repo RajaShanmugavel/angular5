@@ -38,7 +38,6 @@ export class StudentFormComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger;
     const val = this.studentForm.value;
     this.submittedStudent.emit(val);
   }
