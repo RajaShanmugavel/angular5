@@ -4,3 +4,4 @@
 The below theme is required for Angular Material components to work and display correctly. There are 4 themes available.
 */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
