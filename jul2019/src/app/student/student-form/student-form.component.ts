@@ -1,4 +1,11 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  EventEmitter,
+  Output,
+  Input,
+  OnChanges
+} from '@angular/core';
 import { State } from './state';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Student } from '../student';
@@ -8,7 +15,7 @@ import { Student } from '../student';
   templateUrl: './student-form.component.html',
   styleUrls: ['./student-form.component.css']
 })
-export class StudentFormComponent implements OnInit {
+export class StudentFormComponent implements OnInit, OnChanges {
   states: State[] = [
     { value: 'NSW', viewValue: 'New South Wales' },
     { value: 'VIC', viewValue: 'Victoria' },
@@ -18,6 +25,9 @@ export class StudentFormComponent implements OnInit {
   studentForm: FormGroup;
   students: Student[];
 
+  @Input()
+  editStudent: Student;
+
   @Output()
   submittedStudent = new EventEmitter<Student>();
 
@@ -25,6 +35,18 @@ export class StudentFormComponent implements OnInit {
 
   ngOnInit() {
     this.createForm();
+  }
+
+  ngOnChanges() {
+    if (this.editStudent) {
+      this.studentForm.setValue({
+        id: this.editStudent.id,
+        firstName: this.editStudent.firstName,
+        lastName: this.editStudent.lastName,
+        email: this.editStudent.email,
+        state: this.editStudent.state
+      });
+    }
   }
 
   createForm() {

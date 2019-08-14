@@ -24,7 +24,7 @@ export class StudentComponent implements OnInit {
   }
 
   handleEditedStudent(student: Student) {
-
+    this.student = student;
   }
 
   getAllStudents() {
