@@ -23,6 +23,10 @@ export class StudentComponent implements OnInit {
     });
   }
 
+  handleEditedStudent(student: Student) {
+
+  }
+
   getAllStudents() {
     this.studentService.getStudents().subscribe(res => {
       this.students = res;

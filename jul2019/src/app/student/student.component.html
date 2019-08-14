@@ -7,7 +7,7 @@
   </div>
   <div class="row">
     <div class="col-md-8">
-      <app-student-table [receivedStudents]="students"></app-student-table>
+      <app-student-table [receivedStudents]="students" (editedStudent)="handleEditedStudent($event)"></app-student-table>
     </div>
   </div>
 </div>
