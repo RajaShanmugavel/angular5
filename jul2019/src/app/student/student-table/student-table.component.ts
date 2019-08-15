@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Student } from '../student';
+import { debug } from 'util';
 
 @Component({
   selector: 'app-student-table',
