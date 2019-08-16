@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from './student';
 import { StudentManageService } from '../student-manage.service';
-import { debug } from 'util';
+import { Student } from './student';
 
 @Component({
   selector: 'app-student',
@@ -20,6 +19,13 @@ export class StudentComponent implements OnInit {
 
   handleSubmittedStudent(student: Student) {
     this.studentService.saveStudent(student).subscribe(res => {
+      this.getAllStudents();
+    });
+  }
+
+  handleDeletedStudent(student: Student) {
+    console.log('delete student:' + student.firstName);
+    this.studentService.deleteStudent(student).subscribe(res => {
       this.getAllStudents();
     });
   }

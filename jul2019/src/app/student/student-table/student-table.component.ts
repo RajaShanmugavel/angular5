@@ -8,20 +8,24 @@ import { debug } from 'util';
   styleUrls: ['./student-table.component.css']
 })
 export class StudentTableComponent implements OnInit {
-
   @Input()
   receivedStudents: Student[];
 
   @Output()
   editedStudent = new EventEmitter<Student>();
 
-  constructor() { }
+  @Output()
+  deletedStudent = new EventEmitter<Student>();
 
-  ngOnInit() {
-  }
+  constructor() {}
+
+  ngOnInit() {}
 
   onEdit(student: Student) {
     this.editedStudent.emit(student);
   }
 
+  OnDelete(student: Student) {
+    this.deletedStudent.emit(student);
+  }
 }

@@ -2,12 +2,19 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <app-student-form (submittedStudent)="handleSubmittedStudent($event)" [editStudent]="student"></app-student-form>
+      <app-student-form
+        (submittedStudent)="handleSubmittedStudent($event)"
+        [editStudent]="student"
+      ></app-student-form>
     </div>
   </div>
   <div class="row">
     <div class="col-md-8">
-      <app-student-table [receivedStudents]="students" (editedStudent)="handleEditedStudent($event)"></app-student-table>
+      <app-student-table
+        [receivedStudents]="students"
+        (editedStudent)="handleEditedStudent($event)"
+        (deletedStudent)="handleDeletedStudent($event)"
+      ></app-student-table>
     </div>
   </div>
 </div>
