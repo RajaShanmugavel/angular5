@@ -38,6 +38,11 @@ export class StudentManageService {
     }
   }
 
+  /**
+   * Delete a student
+   *
+   * @param student
+   */
   deleteStudent(student: Student): Observable<Student> {
     return this.httpClient.delete<Student>(this.APP_URL + '/' + student.id);
   }
