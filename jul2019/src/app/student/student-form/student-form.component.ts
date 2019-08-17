@@ -7,7 +7,7 @@ import {
   OnChanges
 } from '@angular/core';
 import { State } from './state';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Student } from '../student';
 
 @Component({
@@ -24,6 +24,7 @@ export class StudentFormComponent implements OnInit, OnChanges {
 
   studentForm: FormGroup;
   students: Student[];
+  isSubmitted = false;
 
   @Input()
   editStudent: Student;
@@ -49,17 +50,25 @@ export class StudentFormComponent implements OnInit, OnChanges {
     }
   }
 
+  get formControls() {
+    return this.studentForm.controls;
+  }
+
   createForm() {
     this.studentForm = this.fb.group({
       id: null,
-      firstName: null,
-      lastName: null,
-      email: null,
-      state: null
+      firstName: [null, Validators.required],
+      lastName: [null, Validators.required],
+      email: [null, Validators.required],
+      state: [null, Validators.required]
     });
   }
 
   onSubmit() {
+    // if (this.studentForm.invalid) {
+    //   return;
+    // }
+    this.isSubmitted = true;
     const val = this.studentForm.value;
     this.submittedStudent.emit(val);
   }
