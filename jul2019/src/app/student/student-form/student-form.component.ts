@@ -65,10 +65,10 @@ export class StudentFormComponent implements OnInit, OnChanges {
   }
 
   onSubmit() {
-    // if (this.studentForm.invalid) {
-    //   return;
-    // }
     this.isSubmitted = true;
+    if (this.studentForm.invalid) {
+      return;
+    }
     const val = this.studentForm.value;
     this.submittedStudent.emit(val);
   }
