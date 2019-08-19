@@ -22,6 +22,8 @@
             aria-describedby="inputGroup-sizing-default"
           >
         </div>
+      </div>
+      <div class="col-md-4">
         <div
           *ngIf="isSubmitted && formControls.firstName.errors"
           class="alert alert-danger"
@@ -49,6 +51,9 @@
             aria-describedby="inputGroup-sizing-default"
           >
         </div>
+
+      </div>
+      <div class="col-md-4">
         <div
           *ngIf="isSubmitted && formControls.lastName.errors"
           class="alert alert-danger"
@@ -76,6 +81,9 @@
             aria-describedby="inputGroup-sizing-default"
           >
         </div>
+
+      </div>
+      <div class="col-md-4">
         <div
           *ngIf="isSubmitted && formControls.email.errors"
           class="alert alert-danger"
@@ -97,6 +105,15 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
+
+      </div>
+      <div class="col-md-4">
+        <div
+          *ngIf="isSubmitted && formControls.state.errors"
+          class="alert alert-danger"
+        >
+          <div *ngIf="formControls.state.errors.required">State is required</div>
+        </div>
       </div>
     </div>
     <div class="row">
