@@ -24,7 +24,10 @@ export class StudentManageService {
   saveStudent(student: Student): Observable<Student> {
     if (student.id) {
       // update existing student
-      return this.httpClient.put<Student>(this.APP_URL + '/' + student.id, student);
+      return this.httpClient.put<Student>(
+        this.APP_URL + '/' + student.id,
+        student
+      );
     } else {
       // save new student
       student = {
