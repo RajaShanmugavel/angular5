@@ -13,6 +13,7 @@ export class StudentManageService {
 
   /**
    * Get All Students..
+   * @param student[]
    */
   getStudents(): Observable<Student[]> {
     return this.httpClient.get<Student[]>(this.APP_URL);
@@ -20,6 +21,7 @@ export class StudentManageService {
 
   /**
    * Save or Update a Student..
+   * @param student
    */
   saveStudent(student: Student): Observable<Student> {
     if (student.id) {
@@ -43,6 +45,7 @@ export class StudentManageService {
 
   /**
    * Delete a student
+   * @param student
    *
    * @param student
    */
