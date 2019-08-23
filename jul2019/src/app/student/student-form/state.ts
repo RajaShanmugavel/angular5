@@ -1,5 +1,5 @@
 /**
- * This interface is used for the dropdown
+ * This interface is used for the dropdown list
  */
 
 export interface State {
