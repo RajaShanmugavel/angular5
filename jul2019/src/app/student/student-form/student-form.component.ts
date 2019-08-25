@@ -54,6 +54,10 @@ export class StudentFormComponent implements OnInit, OnChanges {
     return this.studentForm.controls;
   }
 
+  clear() {
+    this.studentForm.reset();
+  }
+
   createForm() {
     this.studentForm = this.fb.group({
       id: null,
