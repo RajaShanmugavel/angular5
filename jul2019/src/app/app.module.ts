@@ -12,6 +12,8 @@ import { StudentTableComponent } from './student/student-table/student-table.com
 import { StudentFormComponent } from './student/student-form/student-form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehiclevehicleFormComponent } from './vehiclevehicle-form/vehiclevehicle-form.component';
+import { VehicleFormComponent } from './vehicle/vehicle-form/vehicle-form.component';
+import { VehicleTableComponent } from './vehicle/vehicle-table/vehicle-table.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { VehiclevehicleFormComponent } from './vehiclevehicle-form/vehiclevehicl
     StudentTableComponent,
     StudentFormComponent,
     VehicleComponent,
-    VehiclevehicleFormComponent
+    VehiclevehicleFormComponent,
+    VehicleFormComponent,
+    VehicleTableComponent
   ],
   imports: [
     BrowserModule,
