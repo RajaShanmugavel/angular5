@@ -11,7 +11,6 @@ import { StudentComponent } from './student/student.component';
 import { StudentTableComponent } from './student/student-table/student-table.component';
 import { StudentFormComponent } from './student/student-form/student-form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import { VehiclevehicleFormComponent } from './vehiclevehicle-form/vehiclevehicle-form.component';
 import { VehicleFormComponent } from './vehicle/vehicle-form/vehicle-form.component';
 import { VehicleTableComponent } from './vehicle/vehicle-table/vehicle-table.component';
 
@@ -22,7 +21,6 @@ import { VehicleTableComponent } from './vehicle/vehicle-table/vehicle-table.com
     StudentTableComponent,
     StudentFormComponent,
     VehicleComponent,
-    VehiclevehicleFormComponent,
     VehicleFormComponent,
     VehicleTableComponent
   ],
