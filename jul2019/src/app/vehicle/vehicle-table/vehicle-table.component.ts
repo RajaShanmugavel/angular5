@@ -9,6 +9,9 @@ export class VehicleTableComponent implements OnInit {
 
   constructor() { }
 
+  /**
+   *
+   */
   ngOnInit() {
   }
 
