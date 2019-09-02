@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { MatSelectModule } from '@angular/material/select';
 import { TableModule } from 'primeng/table';
 
@@ -13,6 +14,8 @@ import { StudentFormComponent } from './student/student-form/student-form.compon
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicleFormComponent } from './vehicle/vehicle-form/vehicle-form.component';
 import { VehicleTableComponent } from './vehicle/vehicle-table/vehicle-table.component';
+
+import { routingModule } from './routingModule';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { VehicleTableComponent } from './vehicle/vehicle-table/vehicle-table.com
   ],
   imports: [
     BrowserModule,
+    routingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
     MatSelectModule,
-    TableModule
+    TableModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
