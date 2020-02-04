@@ -31,6 +31,7 @@ export class StudentComponent implements OnInit {
   }
 
   handleEditedStudent(student: Student) {
+    debugger;
     this.student = student;
   }
 

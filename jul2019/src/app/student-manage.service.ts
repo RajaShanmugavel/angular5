@@ -24,6 +24,7 @@ export class StudentManageService {
    * @param student
    */
   saveStudent(student: Student): Observable<Student> {
+    debugger;
     if (student.id) {
       // update existing student
       return this.httpClient.put<Student>(
