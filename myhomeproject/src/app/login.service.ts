@@ -45,6 +45,7 @@ export class LoginService {
   }
 
   saveEmployee(employee: Employee): Observable<Employee> {
+    debugger;
     if (employee.id) {
       // below is not required. But still...
       employee = {

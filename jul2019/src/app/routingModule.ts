@@ -5,7 +5,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
   { path: 'student', component: StudentComponent },
-  { path: 'vehicle', component: VehicleComponent }
+  { path: 'vehicle', component: VehicleComponent },
 ];
 
 export const routingModule: ModuleWithProviders = RouterModule.forRoot(routes);

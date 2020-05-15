@@ -37,6 +37,7 @@ export class EmployeeComponent implements OnInit {
    * @param employee
    */
   handlePopulatedEmployee(employee: Employee) {
+    debugger;
     this.loginService.saveEmployee(employee).subscribe(res => {
       this.resp = res;
       this.getEmployees();
