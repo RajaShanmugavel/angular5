@@ -4,22 +4,35 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-cars-form',
   templateUrl: './cars-form.component.html',
-  styleUrls: ['./cars-form.component.css']
+  styleUrls: ['./cars-form.component.css'],
 })
 export class CarsFormComponent implements OnInit {
-
   carsForm: FormGroup;
 
-
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
+    this.createForm();
   }
 
   createForm() {
     this.carsForm = this.fb.group({
-
+      id: null,
+      make: null,
+      model: null,
+      engine: {
+        size: null,
+        cylinders: null,
+        inline: null,
+        compress: null,
+        build: null,
+      },
+      doors: null,
+      drive: null,
+      gearbox: {
+        type: null,
+        gears: null,
+      },
     });
   }
-
 }
