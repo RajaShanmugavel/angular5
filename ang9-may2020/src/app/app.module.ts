@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -16,16 +16,16 @@ import { routingModule } from './routingModule';
     AppComponent,
     CarsComponent,
     CarsFormComponent,
-    CarsTableComponent
+    CarsTableComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     routingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
