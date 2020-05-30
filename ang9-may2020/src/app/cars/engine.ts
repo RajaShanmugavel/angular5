@@ -1,3 +1,7 @@
+/**
+ * Engine subclass of Car
+ */
+
 export class Engine {
   size: string;
   cylinders: string;
