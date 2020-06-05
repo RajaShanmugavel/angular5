@@ -21,7 +21,7 @@ import { routingModule } from './routingModule';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    routingModule,
+    routingModule, // why is this in diff colour?!!
     ReactiveFormsModule,
     HttpClientModule,
   ],
