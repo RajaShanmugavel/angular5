@@ -6,5 +6,7 @@ const routes : Routes = [
   {path: 'cars', component: CarsComponent}
 ];
 
-
+/**
+ * TODO ... add routers..
+ */
 export const routingModule: ModuleWithProviders = RouterModule.forRoot(routes);
