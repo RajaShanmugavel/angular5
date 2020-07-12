@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Car } from '../car';
 
 @Component({
   selector: 'app-cars-form',
@@ -9,10 +10,15 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class CarsFormComponent implements OnInit {
   carsForm: FormGroup;
 
+  @Output()
+  submittedCar = new EventEmitter<Car>();
+
   constructor(private fb: FormBuilder) {}
   /**
    * init() method calling createForm()
-   *  */
+   *
+   *
+   */
   ngOnInit(): void {
     this.createForm();
   }
@@ -39,5 +45,13 @@ export class CarsFormComponent implements OnInit {
         gears: null,
       },
     });
+  }
+
+  /**
+   * onSubmit() on clicking submit from Form
+   */
+  onSubmit(){
+    const val = this.carsForm.value;
+    this.submittedCar.emit(val);
   }
 }
