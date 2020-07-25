@@ -8,6 +8,8 @@ import { Car } from './car';
 })
 export class CarsComponent implements OnInit {
 
+  car: Car;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +17,7 @@ export class CarsComponent implements OnInit {
 
   handleSubmittedCar(car: Car){
     console.log('submitted Car:' + car);
+    this.car = car;
   }
 
 }
