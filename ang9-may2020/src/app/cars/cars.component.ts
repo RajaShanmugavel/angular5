@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
 import { Car } from './car';
 
 @Component({
@@ -10,7 +10,7 @@ export class CarsComponent implements OnInit {
 
   car: Car;
 
-  constructor() { }
+   constructor() { }
 
   ngOnInit(): void {
   }

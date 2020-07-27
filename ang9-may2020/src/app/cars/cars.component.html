@@ -1,9 +1,4 @@
 <app-cars-form (submittedCar)="handleSubmittedCar($event)">
 </app-cars-form>
-<app-cars-table>
+<app-cars-table [receivedCar]="car">
 </app-cars-table>
-<p>
-
-  {{car | json}}
-
-</p>
