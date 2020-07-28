@@ -1,1 +1,30 @@
-<p>{{receivedCar | json}}</p>
+<p>{{receivedCars | json}}</p>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Make</th>
+      <th scope="col">Model</th>
+      <th scope="col">Engine</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let car of receivedCars; index as i">
+        <td>
+          {{car.id}}
+        </td>
+        <td>
+          {{car.make}}
+        </td>
+        <td>
+          {{car.model}}
+        </td>
+        <td>
+          {{car.gearbox}}
+        </td>
+      </tr>
+    </tbody>
+</table>

@@ -8,7 +8,7 @@ import { Car } from './car';
 })
 export class CarsComponent implements OnInit {
 
-  car: Car;
+  cars: Car[] = [];
 
    constructor() { }
 
@@ -17,7 +17,8 @@ export class CarsComponent implements OnInit {
 
   handleSubmittedCar(car: Car){
     console.log('submitted Car:' + car);
-    this.car = car;
+    this.cars.push(car);
+    console.log('submitted Cars:' + this.cars);
   }
 
 }
