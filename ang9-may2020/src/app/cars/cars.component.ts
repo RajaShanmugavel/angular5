@@ -16,7 +16,6 @@ export class CarsComponent implements OnInit {
   }
 
   handleSubmittedCar(car: Car){
-    console.log('submitted Car:' + car);
     this.cars.push(car);
     console.log('submitted Cars:' + this.cars);
   }
