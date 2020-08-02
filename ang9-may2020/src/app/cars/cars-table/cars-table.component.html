@@ -8,6 +8,7 @@
       <th scope="col">Make</th>
       <th scope="col">Model</th>
       <th scope="col">Engine</th>
+      <th scope="col">Gearbox</th>
     </tr>
     </thead>
 
@@ -23,7 +24,10 @@
           {{car.model}}
         </td>
         <td>
-          {{car.gearbox}}
+          {{car.engine.size}}
+        </td>
+        <td>
+          {{car.gearbox.type}}
         </td>
       </tr>
     </tbody>
