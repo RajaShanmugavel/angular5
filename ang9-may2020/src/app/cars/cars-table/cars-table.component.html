@@ -1,6 +1,5 @@
 <p>{{receivedCars | json}}</p>
 
-
 <table class="table table-striped">
   <thead>
     <tr>
@@ -9,26 +8,19 @@
       <th scope="col">Model</th>
       <th scope="col">Engine</th>
       <th scope="col">Gearbox</th>
+      <th scope="col">Drive</th>
     </tr>
-    </thead>
+  </thead>
 
-    <tbody>
-      <tr *ngFor="let car of receivedCars; index as i">
-        <td>
-          {{car.id}}
-        </td>
-        <td>
-          {{car.make}}
-        </td>
-        <td>
-          {{car.model}}
-        </td>
-        <td>
-          {{car.engine.size}}
-        </td>
-        <td>
-          {{car.gearbox.type}}
-        </td>
-      </tr>
-    </tbody>
+  <tbody>
+    <tr *ngFor="let car of receivedCars; index as i">
+      <td>{{car.id}}</td>
+      <td>{{car.make}}</td>
+      <td>{{car.model}}</td>
+      <td>{{car.engine.size}}
+          &nbsp;</td>
+      <td>{{car.gearbox.type}}</td>
+      <td>{{car.drive}}</td>
+    </tr>
+  </tbody>
 </table>

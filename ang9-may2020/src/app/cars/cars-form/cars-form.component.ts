@@ -50,7 +50,7 @@ export class CarsFormComponent implements OnInit {
   /**
    * onSubmit() on clicking submit from Form
    */
-  onSubmit(){
+  onSubmit() {
     const val = this.carsForm.value;
     this.submittedCar.emit(val);
   }
