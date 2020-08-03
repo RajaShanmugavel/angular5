@@ -51,24 +51,51 @@
     </div>
 
     <!-- Engine -->
+
     <div class="row">
       <div class="col-md-8">
+
         <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span
-              class="input-group-text"
-              id="inputGroup-sizing-default"
-            >
+          <div class="card">
+            <div class="card-header">
               Engine
-            </span>
+            </div>
+            <div class="card-body">
+
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="inputGroup-sizing-default"
+                >
+                  engine size
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Default"
+                formControlName="engine.size"
+                aria-describedby="inputGroup-sizing-default"
+              >
+
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="inputGroup-sizing-default"
+                >
+                  cylinders
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Default"
+                formControlName="engine.cylinders"
+                aria-describedby="inputGroup-sizing-default"
+              >
+
+            </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Default"
-            formControlName="make"
-            aria-describedby="inputGroup-sizing-default"
-          >
         </div>
       </div>
       <div class="col-md-4"></div>
