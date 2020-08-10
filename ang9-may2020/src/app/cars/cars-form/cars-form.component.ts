@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import { Car } from '../car';
 
 @Component({
@@ -27,23 +27,23 @@ export class CarsFormComponent implements OnInit {
    * createForm() method called during init()
    */
   createForm() {
-    this.carsForm = this.fb.group({
-      id: null,
-      make: null,
-      model: null,
-      engine: {
-        size: null,
-        cylinders: null,
-        inline: null,
-        compress: null,
-        build: null,
-      },
-      doors: null,
-      drive: null,
-      gearbox: {
-        type: null,
-        gears: null,
-      },
+    this.carsForm = new FormGroup({
+      id: new FormControl(''),
+      make: new FormControl(''),
+      model: new FormControl(''),
+      engine: new FormGroup({
+        size: new FormControl(''),
+        cylinders: new FormControl(''),
+        inline: new FormControl(''),
+        compress: new FormControl(''),
+        build: new FormControl(''),
+      }),
+      doors: new FormControl(''),
+      drive: new FormControl(''),
+      gearbox: new FormGroup({
+        type: new FormControl(''),
+        gears: new FormControl(''),
+      }),
     });
   }
 
