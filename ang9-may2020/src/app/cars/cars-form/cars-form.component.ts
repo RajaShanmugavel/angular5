@@ -41,7 +41,7 @@ export class CarsFormComponent implements OnInit {
       doors: new FormControl(''),
       drive: new FormControl(''),
       gearbox: new FormGroup({
-        type: new FormControl(''),
+        gtype: new FormControl(''),
         gears: new FormControl(''),
       }),
     });

@@ -151,27 +151,29 @@
     </div>
 
     <!-- Gearbox -->
-    <div class="row">
-      <div class="col-md-8">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span
-              class="input-group-text"
-              id="inputGroup-sizing-default"
+    <div formGroupName="gearbox">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span
+                class="input-group-text"
+                id="inputGroup-sizing-default"
+              >
+                Gearbox
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Default"
+              formControlName="gtype"
+              aria-describedby="inputGroup-sizing-default"
             >
-              Gearbox
-            </span>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Default"
-            formControlName="type"
-            aria-describedby="inputGroup-sizing-default"
-          >
         </div>
+        <div class="col-md-4"></div>
       </div>
-      <div class="col-md-4"></div>
     </div>
 
     <div class="row">

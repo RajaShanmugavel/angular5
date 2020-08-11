@@ -3,6 +3,6 @@
  */
 
 export class Gearbox {
-  type: string;
+  gtype: string;
   gears: number;
 }
