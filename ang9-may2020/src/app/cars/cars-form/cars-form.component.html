@@ -2,6 +2,7 @@
   [formGroup]="carsForm"
   (ngSubmit)="onSubmit()"
 >
+  <!-- carsForm is the base Form -->
   <div class="container">
     <!-- Make -->
     <div class="row">
@@ -50,7 +51,7 @@
       <div class="col-md-4"></div>
     </div>
 
-    <!-- Engine as Form -->
+    <!-- Engine as Form Group -->
 
     <div formGroupName="engine">
 
@@ -150,7 +151,7 @@
       <div class="col-md-4"></div>
     </div>
 
-    <!-- Gearbox -->
+    <!-- Gearbox as a Form Group -->
     <div formGroupName="gearbox">
       <div class="row">
         <div class="col-md-8">
