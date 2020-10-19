@@ -11,7 +11,18 @@ export class CarService {
 
   constructor(private httpClient: HttpClient) {}
 
+  /**
+   * Retrieves all the cars
+   */
   getAllCars(): Observable<Car[]> {
     return this.httpClient.get<Car[]>(this.APP_URL);
   }
+
+  /***
+   * Saves a Car
+   */
+
+   saveCar(car: Car){
+
+   }
 }
