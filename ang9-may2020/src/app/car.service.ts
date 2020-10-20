@@ -25,4 +25,12 @@ export class CarService {
    saveCar(car: Car){
 
    }
+
+   updateCar(car: Car) {
+
+   }
+
+   deleteCar(car: Car) {
+
+   }
 }
