@@ -31,6 +31,6 @@ export class CarService {
    }
 
    deleteCar(car: Car) {
-
+      return this.httpClient.delete<Car>(this.APP_URL + '/' + car.id);
    }
 }
